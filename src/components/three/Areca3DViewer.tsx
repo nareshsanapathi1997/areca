@@ -7,6 +7,10 @@ import {
 } from './arecaTextures';
 import { 
   Product3DModelType, 
+  create12InchRoundDeepGeometry,
+  create10InchShallowSquareGeometry,
+  create10InchRoundDeepGeometry,
+  create5InchRoundDeepBowlGeometry,
   createRoundPlateGeometry, 
   createDeepBowlGeometry, 
   createSquarePlateGeometry, 
@@ -47,55 +51,92 @@ const productMeta: Record<Product3DModelType, {
   moq: string;
   idealFor: string;
 }> = {
-  'round-plate': {
-    name: '10" Round Dinner Plate',
-    subtitle: 'Full Course Dining & Export Standard',
+  'round-deep-12': {
+    name: '12" Round Deep - Buffet Plate',
+    subtitle: 'Buffet Plate & Grand Wedding Feasts',
+    diameter: '305 mm (12 Inches)',
+    depth: '28 mm (1.1 Inches Deep Rim)',
+    weight: '50 - 56 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Grand wedding buffets, full-course feasts, thali style dining & heavy meals'
+  },
+  'square-shallow-10': {
+    name: '10" Shallow Square - Starters & Biryani',
+    subtitle: 'Contemporary Starters & Biryani Style Plating',
+    diameter: '254 x 254 mm (10 Inches)',
+    depth: '16 mm (0.63 Inches Shallow Rim)',
+    weight: '42 - 46 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Dum biryani platters, starters, tandoori appetizers, kebabs & cocktail receptions'
+  },
+  'round-deep-10': {
+    name: '10" Round Deep - Tiffin & Hot Foods',
+    subtitle: 'Tiffin & Hot Foods with Spill-Proof Rim',
     diameter: '254 mm (10 Inches)',
-    depth: '22 mm (0.87 Inches)',
-    weight: '38 - 44 Grams',
-    moq: '5,000 Pcs (Wholesale)',
-    idealFor: 'Weddings, corporate catering, eco-resorts & zero-waste events'
+    depth: '24 mm (0.95 Inches Deep Rim)',
+    weight: '40 - 44 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Tiffin breakfasts (idli, dosa, vada), hot foods with sambar, rasam & curries'
+  },
+  'deep-bowl-5': {
+    name: '5" Round Deep Bowl (2.2" Depth)',
+    subtitle: 'Multipurpose Deep Basin (~320ml)',
+    diameter: '127 mm (5 Inches)',
+    depth: '56 mm (2.2 Inches Extra Depth)',
+    weight: '20 - 24 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Multipurpose: curries, dal, gravies, soups, rasam, kheer, payasam & ice cream'
+  },
+  // Compatibility aliases
+  'round-plate': {
+    name: '10" Round Deep - Tiffin & Hot Foods',
+    subtitle: 'Tiffin & Hot Foods with Spill-Proof Rim',
+    diameter: '254 mm (10 Inches)',
+    depth: '24 mm (0.95 Inches Deep Rim)',
+    weight: '40 - 44 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Tiffin breakfasts, hot foods with sambar & curries'
   },
   'square-plate': {
-    name: '8" Square Party Plate',
-    subtitle: 'Modern Minimalist Rimmed Tableware',
-    diameter: '203 x 203 mm (8 Inches)',
-    depth: '18 mm (0.71 Inches)',
-    weight: '32 - 36 Grams',
-    moq: '5,000 Pcs (Wholesale)',
-    idealFor: 'Desserts, cocktail starters, sushi & contemporary banquets'
+    name: '10" Shallow Square - Starters & Biryani',
+    subtitle: 'Starters & Biryani Style Plating',
+    diameter: '254 x 254 mm (10 Inches)',
+    depth: '16 mm (0.63 Inches Shallow Rim)',
+    weight: '42 - 46 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Dum biryani platters, starters, kebabs & appetizers'
   },
   'deep-bowl': {
-    name: '6" Deep Soup & Curry Bowl',
-    subtitle: 'Leak-Proof High-Rim Basins',
-    diameter: '152 mm (6 Inches)',
-    depth: '42 mm (1.65 Inches)',
-    weight: '24 - 28 Grams',
-    moq: '10,000 Pcs (Wholesale)',
-    idealFor: 'Hot soups, curries, gravies, noodles, salads & dips'
+    name: '5" Round Deep Bowl (2.2" Depth)',
+    subtitle: 'Multipurpose Deep Basin (~320ml)',
+    diameter: '127 mm (5 Inches)',
+    depth: '56 mm (2.2 Inches Extra Depth)',
+    weight: '20 - 24 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Multipurpose: curries, dal, gravies, soups & desserts'
   },
   'compartment-plate': {
-    name: '10" 3-Compartment Thali Plate',
-    subtitle: 'Sectioned Multi-Dish Dining Plate',
-    diameter: '260 mm (10.25 Inches)',
-    depth: '26 mm (1.02 Inches)',
-    weight: '48 - 54 Grams',
-    moq: '5,000 Pcs (Wholesale)',
-    idealFor: 'Indian Thali, buffet spreads, combo meals & institutional food services'
+    name: '12" Round Deep - Buffet Plate',
+    subtitle: 'Buffet Plate & Grand Wedding Feasts',
+    diameter: '305 mm (12 Inches)',
+    depth: '28 mm (1.1 Inches Deep Rim)',
+    weight: '50 - 56 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Grand wedding buffets, full-course feasts & heavy meals'
   },
   'oval-platter': {
-    name: '10" x 7" Oval Serving Platter',
-    subtitle: 'Sleek Elongated Appetizer Platter',
-    diameter: '254 x 178 mm (10x7 In)',
-    depth: '20 mm (0.78 Inches)',
-    weight: '36 - 40 Grams',
-    moq: '5,000 Pcs (Wholesale)',
-    idealFor: 'Charcuterie, finger foods, barbeque skewers & shared starters'
+    name: '10" Shallow Square - Starters & Biryani',
+    subtitle: 'Starters & Biryani Style Plating',
+    diameter: '254 x 254 mm (10 Inches)',
+    depth: '16 mm (0.63 Inches Shallow Rim)',
+    weight: '42 - 46 Grams',
+    moq: '3,000 Pcs per Order',
+    idealFor: 'Dum biryani platters, starters, kebabs & appetizers'
   }
 };
 
 export const Areca3DViewer: React.FC<Areca3DViewerProps> = ({
-  initialProduct = 'round-plate',
+  initialProduct = 'round-deep-12',
   showControls = true,
   className = '',
   height = 'h-[520px] sm:h-[620px]'
@@ -156,39 +197,30 @@ export const Areca3DViewer: React.FC<Areca3DViewerProps> = ({
 
     const material = createArecaMaterial(preset, wireframe);
 
-    if (productType === 'round-plate') {
-      const geom = createRoundPlateGeometry();
+    if (productType === 'round-deep-12' || productType === 'compartment-plate') {
+      const geom = create12InchRoundDeepGeometry();
       const mesh = new THREE.Mesh(geom, material);
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       productGroupRef.current.add(mesh);
-    } else if (productType === 'square-plate') {
-      const geom = createSquarePlateGeometry();
+    } else if (productType === 'square-shallow-10' || productType === 'square-plate' || productType === 'oval-platter') {
+      const geom = create10InchShallowSquareGeometry();
       const mesh = new THREE.Mesh(geom, material);
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       productGroupRef.current.add(mesh);
-    } else if (productType === 'deep-bowl') {
-      const geom = createDeepBowlGeometry();
+    } else if (productType === 'round-deep-10' || productType === 'round-plate') {
+      const geom = create10InchRoundDeepGeometry();
       const mesh = new THREE.Mesh(geom, material);
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       productGroupRef.current.add(mesh);
-    } else if (productType === 'oval-platter') {
-      const geom = createOvalPlatterGeometry();
+    } else if (productType === 'deep-bowl-5' || productType === 'deep-bowl') {
+      const geom = create5InchRoundDeepBowlGeometry();
       const mesh = new THREE.Mesh(geom, material);
       mesh.castShadow = true;
       mesh.receiveShadow = true;
       productGroupRef.current.add(mesh);
-    } else if (productType === 'compartment-plate') {
-      const compGroup = createCompartmentPlateGroup(material);
-      compGroup.traverse((child) => {
-        if (child instanceof THREE.Mesh) {
-          child.castShadow = true;
-          child.receiveShadow = true;
-        }
-      });
-      productGroupRef.current.add(compGroup);
     }
   }, []);
 
@@ -490,7 +522,7 @@ export const Areca3DViewer: React.FC<Areca3DViewerProps> = ({
     if (!rendererRef.current) return;
     const dataUrl = rendererRef.current.domElement.toDataURL('image/png');
     const link = document.createElement('a');
-    link.download = `Hanuman-Areca-3D-${selectedProduct}.png`;
+    link.download = `Hanuma-Areca-3D-${selectedProduct}.png`;
     link.href = dataUrl;
     link.click();
     setSnapshotTaken(true);
@@ -633,15 +665,14 @@ export const Areca3DViewer: React.FC<Areca3DViewerProps> = ({
             <div>
               <label className="text-xs font-bold uppercase tracking-wider text-[#6B4F35] block mb-2.5 flex items-center justify-between">
                 <span>Select 3D Tableware Die</span>
-                <span className="text-[10px] text-[#2D6A4F] font-semibold">5 Active Dies</span>
+                <span className="text-[10px] text-[#2D6A4F] font-semibold">4 Core Factory Dies</span>
               </label>
               <div className="grid grid-cols-2 gap-2">
                 {[
-                  { id: 'round-plate', label: '10" Round Plate' },
-                  { id: 'square-plate', label: '8" Square Plate' },
-                  { id: 'deep-bowl', label: '6" Deep Bowl' },
-                  { id: 'compartment-plate', label: '10" 3-Compartment' },
-                  { id: 'oval-platter', label: '10x7" Oval Platter' },
+                  { id: 'round-deep-12', label: '12" Round Deep (Buffet)' },
+                  { id: 'square-shallow-10', label: '10" Shallow Square (Biryani)' },
+                  { id: 'round-deep-10', label: '10" Round Deep (Tiffin)' },
+                  { id: 'deep-bowl-5', label: '5" Deep Bowl (2.2" Depth)' },
                 ].map((item) => (
                   <button
                     key={item.id}

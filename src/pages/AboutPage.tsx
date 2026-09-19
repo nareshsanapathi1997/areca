@@ -3,6 +3,7 @@ import { useRouter } from '../context/RouterContext';
 import { siteConfig } from '../data/site';
 import { companyStats, companyHighlights } from '../data/company';
 import { BrandLogo } from '../components/common/BrandLogo';
+import { FactoryPhotoRotator } from '../components/common/FactoryPhotoRotator';
 import { 
   Leaf, 
   ShieldCheck, 
@@ -31,8 +32,13 @@ export const AboutPage: React.FC = () => {
             Rooted in Nature. Driven by Manufacturing Discipline.
           </h1>
           <p className="text-base sm:text-lg text-[#526356] leading-relaxed">
-            {siteConfig.legalName} is a specialized manufacturer and global exporter of 100% natural, biodegradable Areca palm leaf tableware operating from the Malnad palm region of Karnataka, India.
+            {siteConfig.legalName} is a direct manufacturer and bulk exporter of 100% natural, biodegradable Areca palm leaf tableware operating from Kota Narava, Visakhapatnam, Andhra Pradesh, India.
           </p>
+        </div>
+
+        {/* Official Brand Identity Banner */}
+        <div className="max-w-5xl mx-auto">
+          <BrandLogo variant="banner" />
         </div>
 
         {/* 2-Column Overview */}
@@ -45,7 +51,7 @@ export const AboutPage: React.FC = () => {
               In traditional areca palm cultivation, trees naturally drop their thick, fibrous leaf sheaths several times each year. For decades, these sheaths were either gathered for low-value local fuel or left to decompose in orchards.
             </p>
             <p>
-              Our manufacturing unit was established to give these magnificent natural leaves a higher, noble purpose. By combining artisanal sorting with modern hydraulic heat press technology, we convert this 100% natural biological resource into rigid, elegant, and food-safe plates and bowls that replace single-use plastics globally.
+              Our manufacturing unit at Kota Narava, Visakhapatnam was established to give these magnificent natural leaves a higher, noble purpose. By combining artisanal sorting with modern hydraulic heat press technology, we convert this 100% natural biological resource into rigid, elegant, and food-safe plates and bowls that replace single-use plastics globally.
             </p>
             <p>
               Every stage of our facility operates without synthetic additives, chemical bleaches, or petroleum waxes. We pride ourselves on clean potable spring washing, solar-assisted drying tunnels, and strict multi-point defect inspections.
@@ -58,11 +64,11 @@ export const AboutPage: React.FC = () => {
               </span>
               <span className="flex items-center gap-1.5 bg-[#EBE5D8] px-3 py-1.5 rounded-lg">
                 <HeartHandshake className="w-4 h-4 text-[#2D6A4F]" />
-                Fair Farmer Partnerships
+                1 Lakh Plates / Month
               </span>
               <span className="flex items-center gap-1.5 bg-[#EBE5D8] px-3 py-1.5 rounded-lg">
                 <Globe2 className="w-4 h-4 text-[#2D6A4F]" />
-                Direct Container Freight
+                MOQ: 3,000 Pcs
               </span>
             </div>
           </div>
@@ -84,6 +90,11 @@ export const AboutPage: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Factory Photo Rotator & Verification in About Page */}
+        <div className="pt-4">
+          <FactoryPhotoRotator />
         </div>
 
         {/* Core Pillars */}

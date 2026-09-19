@@ -41,7 +41,7 @@ export const FloatingWhatsApp: React.FC = () => {
           href={getWhatsAppUrl("Hello, I am interested in your Areca Leaf Plates. Please share product details, MOQ, and wholesale pricing.")}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Chat on WhatsApp with Hanuman Enterprises Export Desk"
+          aria-label="Chat on WhatsApp with Hanuma Enterprises Export Desk"
           whileHover={{ scale: 1.12 }}
           whileTap={{ scale: 0.92 }}
           className="relative z-10 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:bg-[#1EBE5D] transition-colors focus:outline-none focus:ring-4 focus:ring-[#25D366]/40 cursor-pointer"

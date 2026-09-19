@@ -407,7 +407,7 @@ export const InteractivePlateInspector: React.FC = () => {
               {/* Quick Inquiry Action Bar */}
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <a
-                  href={getWhatsAppUrl(`Hello Hanuman Enterprises, I was reviewing your ${currentDetail.title} spec. I would like to request physical plate samples for bulk testing.`)}
+                  href={getWhatsAppUrl(`Hello Hanuma Enterprises, I was reviewing your ${currentDetail.title} spec. I would like to request physical plate samples for bulk testing.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs uppercase tracking-wider shadow-md transition-all"

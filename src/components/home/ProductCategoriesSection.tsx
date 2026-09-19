@@ -27,7 +27,7 @@ export const ProductCategoriesSection: React.FC = () => {
               Our Product Categories
             </h2>
             <p className="text-sm sm:text-base text-[#526356] max-w-2xl">
-              Precision heat-pressed tableware available in round, square, partitioned, and specialty shapes tailored for wholesale distributors, caterers, and export markets.
+              12" Deep Buffet plate, 10" Shallow Biryani square, 10" Deep Tiffin plate & 5" Multipurpose Deep Bowl (2.2" depth) manufactured directly at Kota Narava, Visakhapatnam.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ export const ProductCategoriesSection: React.FC = () => {
               onClick={() => navigate('/sizes')}
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-[#FAF8F5] border border-[#D8CFC4] text-xs font-bold text-[#153826] hover:bg-[#EBE5D8] transition-colors"
             >
-              <span>Plate Sizes Guide (6" - 12")</span>
+              <span>Plate Sizes & Bowl Guide</span>
             </button>
             <button
               onClick={() => navigate('/products')}

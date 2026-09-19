@@ -1,25 +1,25 @@
 import { SiteConfig } from '../types';
 
 export const siteConfig: SiteConfig = {
-  name: "Hanuman Enterprises",
-  legalName: "Hanuman Enterprises",
-  tagline: "Naturally Made. Sustainably Crafted.",
-  description: "Manufacturer and bulk supplier of 100% biodegradable Areca Palm Leaf plates, bowls, trays, and eco-friendly tableware.",
+  name: "Hanuma Enterprises",
+  legalName: "Hanuma Enterprises",
+  tagline: "100% Biodegradable • Eco-Friendly • Chemical-Free",
+  description: "Direct manufacturer and wholesale supplier of 100% biodegradable Areca Palm Leaf tableware: 12\" Buffet Plates, 10\" Biryani Square Plates, 10\" Deep Tiffin Plates, and 5\" Deep Bowls. Kota Narava, Visakhapatnam, Andhra Pradesh. Capacity: 1 Lakh plates/month. MOQ: 3,000.",
   phone: "+91 79970 92965",
   whatsapp: "+917997092965",
   whatsappDisplay: "+91 79970 92965",
-  email: "NARESHSANAPATHI1997@gmail.com",
-  exportEmail: "NARESHSANAPATHI1997@gmail.com",
+  email: "hanumaenterprises234@gmail.com",
+  exportEmail: "hanumaenterprises234@gmail.com",
   address: {
-    factoryAddress: "Plot No. 42-45, Agro Rural Industrial Park, Malnad Palm Belt, NH-66",
-    registeredOffice: "Green Hub Towers, 3rd Floor, Commercial Complex, MG Road",
-    city: "Shimoga",
-    state: "Karnataka",
+    factoryAddress: "2-88/1, kota narava",
+    registeredOffice: "2-88/1, kota narava",
+    city: "Visakhapatnam",
+    state: "Andhra Pradesh",
     country: "India",
-    pincode: "577201"
+    pincode: "530027"
   },
-  website: "https://vedaleaf-areca.example.com",
-  businessHours: "Monday – Saturday: 9:00 AM – 6:30 PM (IST)",
+  website: "https://hanuma-enterprises.example.com",
+  businessHours: "Monday – Saturday: 8:30 AM – 7:00 PM (IST)",
   socialLinks: {
     linkedin: "https://linkedin.com",
     facebook: "https://facebook.com",

@@ -93,13 +93,19 @@ export const Header: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Brand Logo */}
+            {/* Brand Logo Header Image */}
             <button
               onClick={() => handleNavClick('/')}
-              className="flex items-center text-left group focus:outline-none"
+              className="flex items-center text-left group focus:outline-none transition-transform hover:opacity-95 cursor-pointer py-0.5"
               id="header-brand-logo"
+              aria-label="Hanuma Enterprises Home"
             >
-              <BrandLogo variant="full" size="md" />
+              <img
+                src="/images/hanuma_header_logo.svg"
+                alt="Hanuma Enterprises - 100% Biodegradable • Eco-Friendly • Chemical-Free"
+                className="h-10 sm:h-12 md:h-13 lg:h-14 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02] drop-shadow-xs"
+                referrerPolicy="no-referrer"
+              />
             </button>
 
             {/* Desktop Navigation Links */}
@@ -177,6 +183,17 @@ export const Header: React.FC = () => {
             id="mobile-navigation-drawer"
             className="lg:hidden border-t border-[#E8E0D2] bg-[#FAF8F5] px-4 pt-3 pb-6 shadow-xl animate-in slide-in-from-top duration-200"
           >
+            <div className="pb-3 pt-1 border-b border-[#E8E0D2]/80 mb-3 flex items-center justify-between">
+              <img
+                src="/images/hanuma_header_logo.svg"
+                alt="Hanuma Enterprises"
+                className="h-9 w-auto object-contain"
+                referrerPolicy="no-referrer"
+              />
+              <span className="text-[10px] uppercase font-bold text-[#2D6A4F] bg-[#E8E0D2] px-2 py-0.5 rounded">
+                Menu
+              </span>
+            </div>
             <div className="space-y-1">
               {navLinks.map((link) => {
                 const active = isActive(link.path);

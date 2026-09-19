@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
               </span>
               <div className="flex items-center gap-2.5">
                 <a
-                  href={getWhatsAppUrl("Hello Hanuman Enterprises, I would like to inquire about your Areca Leaf Tableware.")}
+                  href={getWhatsAppUrl("Hello Hanuma Enterprises, I would like to inquire about your Areca Leaf Tableware.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-8 h-8 rounded-lg bg-[#25D366] hover:bg-[#1EBE5D] text-white flex items-center justify-center shadow transition-transform hover:scale-105"

@@ -8,44 +8,44 @@ export const CapacityStats: React.FC = () => {
     {
       label: "Production Capacity",
       value: companyStats.productionCapacity,
-      detail: "Scalable automated & hydraulic multi-station press lines",
+      detail: "Scalable automated & hydraulic multi-station press lines in Kota Narava, Visakhapatnam",
       icon: Factory,
-      highlight: "50,000+ units/day"
+      highlight: "1 Lakh / Month"
     },
     {
-      label: "Product Varieties",
+      label: "Product Lineup",
       value: companyStats.productVarieties,
-      detail: "Round, square, partitioned, bowls, trays & custom dies",
+      detail: "12\" Deep Buffet, 10\" Shallow Biryani Square, 10\" Deep Tiffin & 5\" Multipurpose Deep Bowl",
       icon: Layers,
-      highlight: "25+ active dies"
+      highlight: "4 Core Formats"
     },
     {
-      label: "Manufacturing Experience",
-      value: companyStats.manufacturingExperience,
-      detail: "Pioneering areca tableware in the Karnataka palm corridor",
+      label: "Minimum Order Quantity",
+      value: "3,000 Pieces",
+      detail: "Direct factory wholesale order fulfillment with shrink-wrapped export packaging",
       icon: Award,
-      highlight: "12+ Years"
+      highlight: "MOQ: 3,000 Pcs"
     },
     {
-      label: "Export Markets / Countries",
+      label: "Distribution Reach",
       value: companyStats.countriesServed,
-      detail: "Export-grade moisture barrier packaging for global transit",
+      detail: "Moisture barrier packaging for safe pan-India freight and overseas export containers",
       icon: Globe,
-      highlight: "15+ Nations"
+      highlight: "Direct Supply"
     },
     {
-      label: "Bulk Orders Supplied",
+      label: "Direct Manufacturer",
       value: companyStats.bulkOrdersSupplied,
-      detail: "Reliable institutional, wholesale & distributor supply",
+      detail: "Reliable institutional, banquet catering, wholesale & distributor supply",
       icon: PackageCheck,
-      highlight: "500+ Containers"
+      highlight: "Factory Direct"
     },
     {
       label: "Facility Infrastructure",
       value: companyStats.factoryAreaSqFt,
-      detail: "Washing, solar drying, pressing & clean packaging zones",
+      detail: "Washing, solar drying, hydraulic thermal pressing & sanitized packaging zones",
       icon: Building,
-      highlight: "Clean ISO Room"
+      highlight: "Kota Narava Unit"
     }
   ];
 
@@ -130,9 +130,10 @@ export const CapacityStats: React.FC = () => {
           })}
         </div>
 
-        {/* Configuration Notice as requested by prompt Section 12 & 29 */}
-        <div className="mt-8 text-center text-xs text-[#6B4F35] bg-[#EBE5D8]/60 p-3 rounded-xl border border-[#D8CFC4]/50 max-w-2xl mx-auto">
-          <em>Note: Business metrics in brackets are easily replaced in <code>src/data/company.ts</code> with your verified operational numbers.</em>
+        {/* Verified Factory Notice */}
+        <div className="mt-8 text-center text-xs text-[#2D6A4F] bg-[#E8F0EA] p-3 rounded-xl border border-[#2D6A4F]/20 max-w-2xl mx-auto flex items-center justify-center gap-2 font-medium">
+          <Factory className="w-4 h-4 text-[#2D6A4F] shrink-0" />
+          <span>Verified Direct Manufacturer: HANUMA ENTERPRISES, 2-88/1, kota narava, Visakhapatnam, Andhra Pradesh - 530027.</span>
         </div>
 
       </div>

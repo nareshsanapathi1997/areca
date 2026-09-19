@@ -5,13 +5,22 @@ import { CompanyStats, WhyChooseUsCard } from '../types';
  * Configurable placeholders allow easy replacement with verified client business metrics.
  */
 export const companyStats: CompanyStats = {
-  productionCapacity: "[Production Capacity / Month]",
-  productVarieties: "24+ Shapes & Sizes",
-  manufacturingExperience: "[Years of Experience]",
-  countriesServed: "[Countries Served / Export Markets]",
-  bulkOrdersSupplied: "[Bulk Shipments Completed]",
-  factoryAreaSqFt: "[Factory Facility Area Sq. Ft.]",
-  isPlaceholderNote: "Values marked in brackets can be configured with your registered business figures in src/data/company.ts"
+  productionCapacity: "1 Lakh Plates / Month",
+  productVarieties: "4 Focused Core Formats",
+  manufacturingExperience: "Direct Factory Production",
+  countriesServed: "Pan-India & Global Supply",
+  bulkOrdersSupplied: "Direct Manufacturer Supply",
+  factoryAreaSqFt: "Kota Narava Facility, Visakhapatnam",
+  isPlaceholderNote: "Verified manufacturing figures for HANUMA ENTERPRISES, Visakhapatnam (AP)."
+};
+
+export const businessHighlights = {
+  capacityMonthly: "1 Lakh Plates",
+  moq: "3,000 Plates per Order",
+  factoryLocation: "2-88/1, kota narava, Visakhapatnam, Andhra Pradesh - 530027, India",
+  email: "hanumaenterprises234@gmail.com",
+  phone: "+91 79970 92965",
+  coreProductsCount: 4
 };
 
 export const companyHighlights = [

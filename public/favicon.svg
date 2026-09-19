@@ -1,63 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#153826"/>
-      <stop offset="100%" stop-color="#0F281B"/>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#153826" />
+      <stop offset="100%" stop-color="#0B1E14" />
     </linearGradient>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F4D06F"/>
-      <stop offset="50%" stop-color="#E0A96D"/>
-      <stop offset="100%" stop-color="#C5832B"/>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3CD" />
+      <stop offset="35%" stop-color="#F3CE65" />
+      <stop offset="70%" stop-color="#D49B37" />
+      <stop offset="100%" stop-color="#8C5812" />
     </linearGradient>
-    <linearGradient id="leafGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#95D5B2"/>
-      <stop offset="50%" stop-color="#52B788"/>
-      <stop offset="100%" stop-color="#2D6A4F"/>
+    <linearGradient id="favLeaf" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#155E38" />
+      <stop offset="50%" stop-color="#2D8A4E" />
+      <stop offset="100%" stop-color="#74C69D" />
     </linearGradient>
-    <linearGradient id="leafGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#D8F3DC"/>
-      <stop offset="100%" stop-color="#74C69D"/>
-    </linearGradient>
-    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
-    </filter>
   </defs>
 
-  <!-- Base Rounded Shield / Circle -->
-  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="3" filter="url(#subtleShadow)"/>
-  
-  <!-- Subtle Internal Ring -->
-  <circle cx="64" cy="64" r="50" fill="none" stroke="#2D6A4F" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- Rounded Premium Container -->
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#favBg)" stroke="url(#favGold)" stroke-width="2.5" />
 
-  <!-- Stylized Solar / Golden Aura Crest (Symbol of Divine Energy & Warm Solar Drying) -->
-  <path d="M64 22 L67 30 L75 27 L70 34 L78 35 L71 40 L77 45 L69 47 L72 54 L64 50 L56 54 L59 47 L51 45 L57 40 L50 35 L58 34 L53 27 L61 30 Z" 
-        fill="url(#goldGrad)" opacity="0.35"/>
+  <!-- Monogram Group Scaled for Favicon -->
+  <g transform="translate(14, 14) scale(0.48)">
+    <!-- Golden Left Fronds -->
+    <path d="M40 60 C32 46 22 38 10 35 C18 48 28 58 40 60 Z" fill="url(#favGold)" />
+    <path d="M42 75 C30 62 18 55 6 52 C16 64 28 73 42 75 Z" fill="url(#favGold)" />
+    <path d="M46 92 C32 80 18 74 4 72 C16 84 30 90 46 92 Z" fill="url(#favGold)" />
+    <path d="M51 110 C36 100 20 96 5 95 C18 104 34 109 51 110 Z" fill="url(#favGold)" />
+    <path d="M58 128 C42 120 25 118 10 119 C24 126 40 128 58 128 Z" fill="url(#favGold)" />
 
-  <!-- Central Areca Palm Frond Leaf (Organic, Elegant Curved Ribs) -->
-  <g transform="translate(64,68) rotate(-15) translate(-64,-68)">
-    <!-- Primary Leaf Blade -->
-    <path d="M64 26 C76 42 86 64 82 86 C80 98 70 106 64 108 C58 106 48 98 46 86 C42 64 52 42 64 26 Z" 
-          fill="url(#leafGrad1)"/>
-    
-    <!-- Secondary Highlight Leaf Wing -->
-    <path d="M64 26 C73 40 80 60 76 82 C74 94 67 102 64 108 C64 96 66 70 64 26 Z" 
-          fill="url(#leafGrad2)" opacity="0.75"/>
+    <!-- Left Column of 'H' -->
+    <polygon points="52,32 108,32 108,38 94,38 94,162 108,162 108,168 52,168 52,162 68,162 68,38 52,38" fill="url(#favGold)" />
 
-    <!-- Central Leaf Vein Spine -->
-    <path d="M64 28 Q64 70 64 112" 
-          stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Right Column of 'H' -->
+    <polygon points="144,32 200,32 200,38 184,38 184,162 200,162 200,168 144,168 144,162 160,162 160,38 144,38" fill="url(#favGold)" />
 
-    <!-- Diagonal Leaf Ribs -->
-    <path d="M64 42 Q72 38 78 44 M64 54 Q74 50 81 58 M64 68 Q75 66 80 74 M64 82 Q72 80 76 88" 
-          stroke="#FAF8F5" stroke-width="1.2" stroke-linecap="round" opacity="0.65"/>
-    <path d="M64 46 Q56 42 50 48 M64 58 Q54 54 48 62 M64 72 Q54 70 49 78" 
-          stroke="#FAF8F5" stroke-width="1.2" stroke-linecap="round" opacity="0.65"/>
+    <!-- Ribbon Crossbar of 'H' -->
+    <path d="M68 108 C80 96 110 88 145 92 C172 95 195 80 215 56 C210 74 195 106 160 114 C128 120 95 116 68 108 Z" fill="url(#favGold)" />
+
+    <!-- Emerald Leaves on Right Column -->
+    <path d="M158 168 C160 140 168 115 178 95 C186 112 186 138 180 168 Z" fill="url(#favLeaf)" />
+    <path d="M174 165 C185 138 200 118 218 102 C214 125 204 148 185 168 Z" fill="url(#favLeaf)" />
+    <path d="M152 168 C144 145 138 128 140 110 C150 126 156 148 158 168 Z" fill="url(#favLeaf)" />
+
+    <!-- Right side fronds -->
+    <g transform="translate(170, 90)">
+      <path d="M10 15 C24 10 38 8 50 12 C38 18 24 20 10 15 Z" fill="url(#favLeaf)" />
+      <path d="M10 32 C26 28 42 28 54 35 C40 40 24 39 10 32 Z" fill="url(#favLeaf)" />
+      <path d="M8 50 C24 48 40 52 50 62 C36 64 22 60 8 50 Z" fill="url(#favLeaf)" />
+    </g>
   </g>
-
-  <!-- Golden Crown / Mace Spire Motif at Top (Hanuman Emblem of Strength & Integrity) -->
-  <path d="M64 16 L68 25 L64 23 L60 25 Z" fill="url(#goldGrad)"/>
-  <circle cx="64" cy="15" r="3" fill="#F4D06F"/>
-
-  <!-- Base Eco Tableware Rim Arc (Representing Plate Foundation) -->
-  <path d="M34 98 Q64 116 94 98" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
 </svg>

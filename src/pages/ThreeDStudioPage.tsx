@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Areca3DViewer } from '../components/three/Areca3DViewer';
+import { FactoryPhotoRotator } from '../components/common/FactoryPhotoRotator';
 import { Product3DModelType } from '../components/three/arecaGeometries';
 import { useRouter } from '../context/RouterContext';
 import { 
@@ -11,16 +12,18 @@ import {
   Layers, 
   ArrowRight, 
   CheckCircle2, 
-  HelpCircle,
-  FileCheck2,
-  Cpu,
-  Thermometer,
-  Scale
+  HelpCircle, 
+  FileCheck2, 
+  Cpu, 
+  Thermometer, 
+  Scale,
+  Camera,
+  Building2
 } from 'lucide-react';
 
 export const ThreeDStudioPage: React.FC = () => {
   const { openBulkEnquiry } = useRouter();
-  const [activeModel, setActiveModel] = useState<Product3DModelType>('round-plate');
+  const [activeModel, setActiveModel] = useState<Product3DModelType>('round-deep-12');
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] pb-24">
@@ -35,7 +38,7 @@ export const ThreeDStudioPage: React.FC = () => {
             className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs font-bold uppercase tracking-wider text-[#95D5B2]"
           >
             <Box className="w-4 h-4 text-[#E0A96D]" />
-            <span>Interactive WebGL 3D Engineering Lab</span>
+            <span>HANUMA ENTERPRISES • 3D & Factory Inspection Lab</span>
           </motion.div>
 
           <motion.h1
@@ -44,7 +47,7 @@ export const ThreeDStudioPage: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-5xl font-extrabold font-heading tracking-tight"
           >
-            3D Areca Tableware Visualizer
+            3D Areca Tableware & Factory Visualizer
           </motion.h1>
 
           <motion.p
@@ -53,14 +56,19 @@ export const ThreeDStudioPage: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-[#C2B5A0] max-w-3xl mx-auto leading-relaxed"
           >
-            Inspect export-ready Areca Leaf tableware in real-time 3D. Rotate 360°, examine natural botanical fiber grains, test material finishes, and simulate hydraulic thermal pressing.
+            Inspect our 4 core export-grade products in real-time 3D WebGL, and examine authentic workshop photographs of our hydraulic press facility in Visakhapatnam.
           </motion.p>
         </div>
       </section>
 
       {/* Main 3D Studio Showcase */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
-        <Areca3DViewer initialProduct={activeModel} height="h-[550px] sm:h-[680px]" />
+        <Areca3DViewer initialProduct="round-deep-12" height="h-[550px] sm:h-[680px]" />
+      </section>
+
+      {/* Real Workshop Photo & Interactive Rotator Section */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+        <FactoryPhotoRotator />
       </section>
 
       {/* Engineering & Material Tolerances Section */}

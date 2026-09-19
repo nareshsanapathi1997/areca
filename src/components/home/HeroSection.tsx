@@ -72,7 +72,7 @@ export const HeroSection: React.FC = () => {
               <span className="w-2 h-2 rounded-full bg-[#2D6A4F] animate-pulse"></span>
               <span className="uppercase tracking-wider">Direct Manufacturer & Bulk Exporter</span>
               <span className="text-[#8C6D46]">•</span>
-              <span className="text-[#6B4F35]">Malnad Palm Belt, India</span>
+              <span className="text-[#6B4F35]">Kota Narava, Visakhapatnam (AP)</span>
               <div className="absolute inset-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 animate-shimmer-sweep pointer-events-none" />
             </motion.div>
 
@@ -96,7 +96,7 @@ export const HeroSection: React.FC = () => {
                 transition={{ delay: 0.3, duration: 0.6 }}
                 className="text-lg sm:text-xl text-[#3E4E42] max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal"
               >
-                Premium Areca Leaf Plates manufactured from naturally fallen areca leaves for eco-friendly dining, catering, hospitality and bulk supply.
+                HANUMA ENTERPRISES manufactures 100% natural, biodegradable Areca Palm Leaf tableware: 12" Buffet Plates, 10" Biryani Square Plates, 10" Deep Tiffin Plates, and 5" Deep Bowls (2.2" Depth). Capacity: 1 Lakh plates/month. Minimum Order Quantity: 3,000.
               </motion.p>
             </div>
 
@@ -195,7 +195,7 @@ export const HeroSection: React.FC = () => {
                     }}
                   />
 
-                  {/* Official Hanuman Enterprises Brand Seal */}
+                  {/* Official Hanuma Enterprises Brand Seal */}
                   <div className="absolute top-3 left-3">
                     <BrandLogo variant="badge" />
                   </div>
@@ -220,12 +220,12 @@ export const HeroSection: React.FC = () => {
 
               {/* Floating secondary badge with gentle float animation */}
               <div className="absolute -top-4 -right-4 sm:-right-6 bg-[#FAF8F5] border border-[#D8CFC4] shadow-xl rounded-2xl p-3 flex items-center gap-3 animate-float-slow">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2D6A4F] to-[#153826] text-white flex items-center justify-center font-bold text-xs shadow">
-                  200°C
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2D6A4F] to-[#153826] text-white flex items-center justify-center font-bold text-xs shadow text-center leading-tight">
+                  1 Lakh<br/><span className="text-[9px]">/Mo</span>
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-[#153826]">Thermal Pressed</div>
-                  <div className="text-[11px] text-[#6B4F35]">Hygienically Sanitized</div>
+                  <div className="text-xs font-bold text-[#153826]">Production Capacity</div>
+                  <div className="text-[11px] text-[#6B4F35]">MOQ: 3,000 Pcs / Order</div>
                 </div>
               </div>
 
@@ -235,8 +235,8 @@ export const HeroSection: React.FC = () => {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-[#153826]">Export Grade</div>
-                  <div className="text-[11px] text-[#6B4F35]">Moisture Barrier Shrink Packed</div>
+                  <div className="text-xs font-bold text-[#153826]">Direct Manufacturer</div>
+                  <div className="text-[11px] text-[#6B4F35]">Kota Narava, Visakhapatnam</div>
                 </div>
               </div>
 
