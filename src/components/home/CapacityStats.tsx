@@ -50,7 +50,7 @@ export const CapacityStats: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#FAF8F5] border-b border-[#E8E0D2] relative overflow-hidden">
+    <section className="py-10 bg-[#FAF8F5] border-b border-[#E8E0D2] relative overflow-hidden">
       {/* Background graphic grid */}
       <div className="absolute inset-0 bg-leaf-pattern opacity-40 pointer-events-none" />
 
@@ -133,7 +133,7 @@ export const CapacityStats: React.FC = () => {
         {/* Verified Factory Notice */}
         <div className="mt-8 text-center text-xs text-[#2D6A4F] bg-[#E8F0EA] p-3 rounded-xl border border-[#2D6A4F]/20 max-w-2xl mx-auto flex items-center justify-center gap-2 font-medium">
           <Factory className="w-4 h-4 text-[#2D6A4F] shrink-0" />
-          <span>Verified Direct Manufacturer: HANUMA ENTERPRISES, 2-88/1, kota narava, Visakhapatnam, Andhra Pradesh - 530027.</span>
+          <span>Verified Direct Manufacturer: Hanuma Enterprises, 2-88/1, Kota Narava, Visakhapatnam, Andhra Pradesh - 530027.</span>
         </div>
 
       </div>

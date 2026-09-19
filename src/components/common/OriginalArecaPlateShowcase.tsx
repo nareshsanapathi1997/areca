@@ -37,7 +37,7 @@ interface PlateModel {
 const plateModels: PlateModel[] = [
   {
     id: 'round-10',
-    name: '10-Inch Round Dinner Plate',
+    name: '10-Inch Round Deep - Tiffin & Hot Foods',
     category: 'Dinnerware',
     dimensions: '10 inch (25.4 cm) diameter',
     depth: '22 mm deep rim',
@@ -48,7 +48,7 @@ const plateModels: PlateModel[] = [
         id: 'surface',
         label: 'Front Dining Face',
         sublabel: 'Smooth Heat-Treated Surface',
-        image: '/images/areca-original/areca_plate_original_1.jpg',
+        image: '/images/areca-original/areca_plate_10_inch_round_deep.jpg',
         caption: 'Uncoated, natural smooth face exhibiting natural linear palm grain and warm beige variegation.',
         highlights: ['100% Chemical-Free & Unbleached', 'Natural Leaf Wax Barrier', 'Zero Plastic / PFAS Coating']
       },
@@ -56,7 +56,7 @@ const plateModels: PlateModel[] = [
         id: 'back',
         label: 'Underside Sheath Texture',
         sublabel: 'Natural Structural Ribs',
-        image: '/images/areca-original/areca_plate_original_2.jpg',
+        image: '/images/areca-original/areca_plate_10_inch_round_deep.jpg',
         caption: 'The reverse surface clearly displays the fibrous longitudinal veins of the naturally fallen palm sheath.',
         highlights: ['High Tensile Fiber Network', 'Natural Earth Tones & Grain', 'Tactile Slip-Resistant Base']
       },
@@ -64,7 +64,7 @@ const plateModels: PlateModel[] = [
         id: 'edge',
         label: 'Rim & Thickness Bevel',
         sublabel: '3mm Multi-Fiber Core',
-        image: '/images/areca-original/areca_plate_round_yercaud1.jpg',
+        image: '/images/areca-original/areca_plate_10_inch_round_deep.jpg',
         caption: 'Hydraulically compressed border sealed under 200°C die tooling for burr-free, smooth dining comfort.',
         highlights: ['Precision Contour Die Trim', 'Snag-Free Rolled Edge', 'No Delamination Under Heat']
       },
@@ -72,7 +72,7 @@ const plateModels: PlateModel[] = [
         id: 'dining',
         label: 'Live Dining Application',
         sublabel: 'Plated Culinary Presentation',
-        image: '/images/areca-original/areca_plates_stack_1.jpg',
+        image: '/images/areca-original/areca_plate_10_inch_round_deep.jpg',
         caption: 'Sturdy under piping hot curries, steaks, and gravies. Holds heat without softening or sweating.',
         highlights: ['Tested Leak-Proof 4+ Hours', 'Microwave Reheatable (2 Min)', 'No Food Odor Transfer']
       }
@@ -91,7 +91,7 @@ const plateModels: PlateModel[] = [
         id: 'surface',
         label: 'Front Dining Face',
         sublabel: 'Crisp Geometric Bevel',
-        image: '/images/areca-original/areca_plate_round_yercaud2.jpg',
+        image: '/images/areca-original/areca_plate_10_inch_square_shallow.jpg',
         caption: 'Wide dining canvas with deep pressed corners that maintain rigidity even with saucy entrees.',
         highlights: ['Modern Square Styling', 'Zero Warping Under Heat', 'Natural Woody Look']
       },
@@ -99,7 +99,7 @@ const plateModels: PlateModel[] = [
         id: 'back',
         label: 'Underside Sheath Texture',
         sublabel: 'Dense Cross-Fiber Base',
-        image: '/images/areca-original/areca_plate_round_yercaud3.jpg',
+        image: '/images/areca-original/areca_plate_10_inch_square_shallow.jpg',
         caption: 'Underside showcases authentic leaf texture created by natural tropical sunlight and rain.',
         highlights: ['Reinforced Corner Tonnage', 'Organic Texture Fingerprint', 'Completely Non-Toxic']
       },
@@ -107,7 +107,7 @@ const plateModels: PlateModel[] = [
         id: 'edge',
         label: 'Rim & Thickness Bevel',
         sublabel: 'High Precision Die Edge',
-        image: '/images/areca-original/areca_plate_making_factory.jpg',
+        image: '/images/areca-original/areca_plate_10_inch_square_shallow.jpg',
         caption: 'Sharp yet safe perimeter edges engineered to stack compactly during shipping.',
         highlights: ['Space-Saving Nesting Stack', 'Rigid Sidewalls', 'Smooth Hand Grip']
       },
@@ -115,77 +115,77 @@ const plateModels: PlateModel[] = [
         id: 'dining',
         label: 'Live Dining Application',
         sublabel: 'Modern Table Setting',
-        image: '/images/areca-original/areca_plates_multi.jpg',
+        image: '/images/areca-original/areca_plate_10_inch_square_shallow.jpg',
         caption: 'Pairs naturally with artisanal cutlery, linen, and organic farm-to-table menus.',
         highlights: ['Elevates Event Aesthetics', 'Oil & Grease Resistant', 'Commercial & Home Compostable']
       }
     }
   },
   {
-    id: 'compartment-3',
-    name: '3-Compartment Thali Feast Plate',
-    category: 'Partitioned Tableware',
-    dimensions: '11 inch (28 cm) diameter',
-    depth: '25 mm deep partition walls',
-    weightCapacity: 'Holds up to 1.5 kg mixed meal',
-    description: 'Engineered specifically for combo meals, curries, and Indian Asian banquets with zero sauce cross-contamination.',
+    id: 'round-12',
+    name: '12-Inch Round Deep - Buffet Plate',
+    category: 'Banquet Dinnerware',
+    dimensions: '12 inch (30.5 cm) diameter',
+    depth: '28 mm deep buffet rim',
+    weightCapacity: 'Holds up to 1.5 kg banquet portions',
+    description: 'Signature high-capacity buffet plate for wedding feasts, multi-dish dining, and export catering.',
     perspectives: {
       surface: {
         id: 'surface',
         label: 'Front Dining Face',
-        sublabel: 'Deep Divider Walls',
-        image: '/images/areca-original/areca_plate_original_2.jpg',
-        caption: 'Three distinct chambers formed in a single deep hydraulic press stroke from thick mature palm sheaths.',
-        highlights: ['No Liquid Cross-Migration', '1 Large Main + 2 Side Chambers', 'Thick Reinforced Dividers']
+        sublabel: 'Heavy-Duty Buffet Rim',
+        image: '/images/areca-original/areca_plate_12_inch_round_deep.jpg',
+        caption: 'Wide 12-inch dining face with a deep spill-prevention rim for full-course banquet service.',
+        highlights: ['12-Inch Banquet Diameter', 'Deep Spill-Prevention Rim', '100% Fallen Palm Sheath']
       },
       back: {
         id: 'back',
         label: 'Underside Sheath Texture',
-        sublabel: 'Contoured Multi-Cavity Base',
-        image: '/images/areca-original/areca_plate_original_1.jpg',
-        caption: 'Bottom rib structure ensures balance on buffet trays and lap dining without tipping.',
-        highlights: ['Anti-Sag Central Spine', 'Deep Draw Molding', 'Zero Adhesive Between Sections']
+        sublabel: 'Natural Structural Ribs',
+        image: '/images/areca-original/areca_plate_12_inch_round_deep.jpg',
+        caption: 'The reverse surface shows the fibrous grain of the naturally fallen areca sheath.',
+        highlights: ['High Tensile Fiber Network', 'Natural Earth Tones & Grain', 'Tactile Slip-Resistant Base']
       },
       edge: {
         id: 'edge',
         label: 'Rim & Thickness Bevel',
-        sublabel: 'Rigid Perimeter Lip',
-        image: '/images/areca-original/areca_plate_round_yercaud1.jpg',
-        caption: 'Extra-wide rim lip allows guests to carry full multi-dish meals comfortably with one hand.',
-        highlights: ['Heavy Duty 3.2mm Fiber', 'Comfort Grip Flange', 'No Bending Under Weight']
+        sublabel: 'Hydraulic Die Flange',
+        image: '/images/areca-original/factory_press_operator.jpg',
+        caption: 'Pressed and trimmed on the factory hydraulic line for a smooth, burr-free banquet rim.',
+        highlights: ['Precision Contour Die Trim', 'Snag-Free Rolled Edge', 'No Delamination Under Heat']
       },
       dining: {
         id: 'dining',
         label: 'Live Dining Application',
-        sublabel: 'Full Course Meal Setup',
-        image: '/images/areca-original/areca_plates_stack_1.jpg',
-        caption: 'The preferred eco solution for wedding feasts, corporate cafeteria meals, and festival dining.',
-        highlights: ['Eliminates Plastic Bowls', 'Hot Sambar & Dal Resistant', 'Zero Cross-Taste Flavor']
+        sublabel: 'Banquet & Buffet Service',
+        image: '/images/areca-original/areca_plate_12_inch_round_deep.jpg',
+        caption: 'Built for biryani, gravies, and multi-course wedding or institutional catering.',
+        highlights: ['1.5 kg Portion Capacity', 'Microwave Reheatable (2 Min)', 'No Food Odor Transfer']
       }
     }
   },
   {
-    id: 'bowl-deep-6',
-    name: '6-Inch Deep Soup & Acai Bowl',
+    id: 'bowl-deep-5',
+    name: '5-Inch Round Deep Bowl (2.2" Depth)',
     category: 'Deep Bowls',
-    dimensions: '6 inch (15 cm) diameter, 350ml capacity',
-    depth: '45 mm deep basin',
-    weightCapacity: 'Full 350ml boiling broth / cold dessert',
-    description: 'Deep-draw hydraulic pressing creates a seamless, leak-proof basin that insulates both hot soups and icy desserts.',
+    dimensions: '5 inch (12.7 cm) diameter, 2.2" depth (~320ml)',
+    depth: '56 mm deep basin',
+    weightCapacity: 'Full 320ml boiling gravy / soup / dessert',
+    description: 'Deep-draw hydraulic pressing creates a seamless, leak-proof 2.2-inch basin that insulates both hot gravies and icy desserts.',
     perspectives: {
       surface: {
         id: 'surface',
         label: 'Front Dining Face',
         sublabel: 'Seamless Basin Interior',
-        image: '/images/areca-original/areca_plate_round_yercaud3.jpg',
-        caption: 'Natural parabolic bowl interior holds soups, ramen, salad, and acai bowls with organic grace.',
+        image: '/images/areca-original/areca_bowl_5_inch_round_deep.jpg',
+        caption: 'Natural parabolic bowl interior holds soups, rasam, curries, and desserts with organic grace.',
         highlights: ['Natural Thermal Insulation', 'Comfortable to Hold with Hot Soup', 'Zero Synthetic Lacquer']
       },
       back: {
         id: 'back',
         label: 'Underside Sheath Texture',
         sublabel: 'Stable Flat Base',
-        image: '/images/areca-original/areca_plates_multi.jpg',
+        image: '/images/areca-original/areca_bowl_5_inch_set.jpg',
         caption: 'Precision flat bottom prevents rolling or wobbling on dining tables.',
         highlights: ['Self-Standing Sturdy Base', 'Deep Hydraulic Stretch', '100% Single Sheath Piece']
       },
@@ -193,7 +193,7 @@ const plateModels: PlateModel[] = [
         id: 'edge',
         label: 'Rim & Thickness Bevel',
         sublabel: 'Curved Drinking Edge',
-        image: '/images/areca-original/areca_leaf_machine_press.jpg',
+        image: '/images/areca-original/areca_bowl_5_inch_round_deep.jpg',
         caption: 'Smooth rounded border allows comfortable direct sipping of broths and soups.',
         highlights: ['Mouth-Safe Smooth Rim', 'Pressure Tested Integrity', 'No Sharp Fibers']
       },
@@ -201,7 +201,7 @@ const plateModels: PlateModel[] = [
         id: 'dining',
         label: 'Live Dining Application',
         sublabel: 'Fresh Gourmet Presentation',
-        image: '/images/areca-original/areca_plate_round_yercaud2.jpg',
+        image: '/images/areca-original/areca_bowl_5_inch_set.jpg',
         caption: 'Enhances organic cafes, poke bowl bars, wedding soup courses, and eco food stalls.',
         highlights: ['Freezer Safe (-20°C)', 'Boiling Hot Liquid Safe (100°C)', 'Home Compostable in 60-90 Days']
       }
@@ -219,7 +219,7 @@ export const OriginalArecaPlateShowcase: React.FC = () => {
   const activeView = activePlate.perspectives[selectedPerspective];
 
   return (
-    <section id="original-leaf-inspector" className="py-20 bg-[#FAF8F5] border-b border-[#E8E0D2]">
+    <section id="original-leaf-inspector" className="py-10 bg-[#FAF8F5] border-b border-[#E8E0D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Section Header */}
@@ -249,7 +249,7 @@ export const OriginalArecaPlateShowcase: React.FC = () => {
               onClick={() => openBulkEnquiry(`Wholesale Order - ${activePlate.name}`)}
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#FAF8F5] border border-[#D8CFC4] text-[#153826] text-xs font-bold hover:bg-[#EBE5D8] transition-colors"
             >
-              <span>Instant Wholesale Quote</span>
+              <span>Instant Wholesale Enquiry</span>
               <ChevronRight className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -282,11 +282,11 @@ export const OriginalArecaPlateShowcase: React.FC = () => {
           <div className="lg:col-span-7 space-y-4">
             
             {/* Visual Display Frame */}
-            <div className="relative rounded-3xl overflow-hidden bg-[#E8E0D2] border border-[#D8CFC4] shadow-xl aspect-[4/3]">
+            <div className="relative rounded-3xl overflow-hidden bg-white border border-[#D8CFC4] shadow-xl aspect-square sm:aspect-[4/3]">
               <img
                 src={activeView.image}
                 alt={`${activePlate.name} - ${activeView.label}`}
-                className="w-full h-full object-cover transition-all duration-500 hover:scale-[1.03]"
+                className="w-full h-full object-contain transition-all duration-500 hover:scale-[1.03]"
                 referrerPolicy="no-referrer"
               />
 

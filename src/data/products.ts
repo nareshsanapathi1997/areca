@@ -38,9 +38,8 @@ export const productsData: Product[] = [
     },
     moq: "3,000 pieces per order",
     images: [
-      "/images/areca-original/areca_plate_original_1.jpg",
-      "/images/areca-original/areca_plate_round_yercaud1.jpg",
-      "/images/areca-original/areca_plates_stack_1.jpg"
+      "/images/areca-original/areca_plate_12_inch_round_deep.jpg",
+      "/images/areca-original/factory_press_operator.jpg"
     ],
     isFeatured: true
   },
@@ -75,9 +74,7 @@ export const productsData: Product[] = [
     },
     moq: "3,000 pieces per order",
     images: [
-      "/images/areca-original/areca_plate_round_yercaud2.jpg",
-      "/images/areca-original/areca_plate_round_yercaud3.jpg",
-      "/images/areca-original/areca_plates_multi.jpg"
+      "/images/areca-original/areca_plate_10_inch_square_shallow.jpg"
     ],
     isFeatured: true
   },
@@ -112,9 +109,7 @@ export const productsData: Product[] = [
     },
     moq: "3,000 pieces per order",
     images: [
-      "/images/areca-original/areca_plate_original_2.jpg",
-      "/images/areca-original/areca_plate_round_yercaud1.jpg",
-      "/images/areca-original/areca_plate_round_yercaud2.jpg"
+      "/images/areca-original/areca_plate_10_inch_round_deep.jpg"
     ],
     isFeatured: true
   },
@@ -149,9 +144,8 @@ export const productsData: Product[] = [
     },
     moq: "3,000 pieces per order",
     images: [
-      "/images/areca-original/areca_plate_round_yercaud3.jpg",
-      "/images/areca-original/areca_plates_multi.jpg",
-      "/images/areca-original/areca_plate_original_1.jpg"
+      "/images/areca-original/areca_bowl_5_inch_round_deep.jpg",
+      "/images/areca-original/areca_bowl_5_inch_set.jpg"
     ],
     isFeatured: true
   }

@@ -3,6 +3,7 @@ import { RouterProvider, useRouter } from './context/RouterContext';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { FloatingWhatsApp } from './components/layout/FloatingWhatsApp';
+import { SeoHead } from './components/seo/SeoHead';
 import { BulkEnquiryModal } from './components/enquiry/BulkEnquiryModal';
 
 // Pages
@@ -18,7 +19,6 @@ import { BulkEnquiryPage } from './pages/BulkEnquiryPage';
 import { ContactPage } from './pages/ContactPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
-import { ThreeDStudioPage } from './pages/ThreeDStudioPage';
 
 const AppContent: React.FC = () => {
   const { currentPath } = useRouter();
@@ -27,9 +27,6 @@ const AppContent: React.FC = () => {
     switch (currentPath) {
       case '/':
         return <HomePage />;
-      case '/3d-studio':
-      case '/3d':
-        return <ThreeDStudioPage />;
       case '/about':
         return <AboutPage />;
       case '/products':
@@ -64,6 +61,7 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF8F5] text-[#153826] font-sans antialiased selection:bg-[#2D6A4F] selection:text-white">
+      <SeoHead />
       <Header />
       <main className="flex-grow">
         {renderCurrentPage()}

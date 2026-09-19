@@ -44,6 +44,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct = '', c
 
   const quantityOptions = [
     "Sample Evaluation Pack (< 1,000 pcs)",
+    "3,000 - 5,000 pieces (Factory MOQ)",
     "5,000 - 10,000 pieces (Initial Wholesale)",
     "10,000 - 25,000 pieces (Distributor Trial)",
     "25,000 - 50,000 pieces (Monthly Contract)",
@@ -182,10 +183,10 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct = '', c
     >
       <div className="border-b border-[#E8E0D2] pb-5 space-y-1">
         <h3 className="text-xl sm:text-2xl font-bold text-[#153826] font-heading">
-          Request a Manufacturing & Wholesale Quote
+          Request a Manufacturing & Wholesale Enquiry
         </h3>
         <p className="text-xs text-[#526356]">
-          Direct pricing from our manufacturing facility in Karnataka. Response within 24 business hours.
+          Direct pricing from our manufacturing facility in Visakhapatnam, Andhra Pradesh. Response within 24 business hours.
         </p>
       </div>
 
@@ -209,7 +210,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct = '', c
             required
             value={formData.fullName}
             onChange={handleInputChange}
-            placeholder="e.g. John Doe"
+            placeholder="e.g. Ravi Kumar"
             className={`w-full px-4 py-2.5 rounded-xl bg-white border text-sm text-[#153826] placeholder-[#8C7A6B]/60 focus:outline-none focus:ring-2 focus:ring-[#2D6A4F] transition-all ${
               errors.fullName ? 'border-red-400 bg-red-50/20' : 'border-[#D8CFC4]'
             }`}
@@ -227,7 +228,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct = '', c
             type="text"
             value={formData.companyName || ''}
             onChange={handleInputChange}
-            placeholder="e.g. Green Earth Catering Ltd."
+            placeholder="e.g. Sri Venkateswara Caterers"
             className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#D8CFC4] text-sm text-[#153826] placeholder-[#8C7A6B]/60 focus:outline-none focus:ring-2 focus:ring-[#2D6A4F] transition-all"
           />
         </div>
@@ -265,7 +266,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct = '', c
             required
             value={formData.phoneNumber}
             onChange={handleInputChange}
-            placeholder="e.g. +1 555 123 4567"
+            placeholder="e.g. +91 98765 43210"
             className={`w-full px-4 py-2.5 rounded-xl bg-white border text-sm text-[#153826] placeholder-[#8C7A6B]/60 focus:outline-none focus:ring-2 focus:ring-[#2D6A4F] transition-all ${
               errors.phoneNumber ? 'border-red-400 bg-red-50/20' : 'border-[#D8CFC4]'
             }`}
@@ -287,7 +288,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct = '', c
             required
             value={formData.country}
             onChange={handleInputChange}
-            placeholder="e.g. United States, Germany, India"
+            placeholder="e.g. India, UAE, USA"
             className={`w-full px-4 py-2.5 rounded-xl bg-white border text-sm text-[#153826] placeholder-[#8C7A6B]/60 focus:outline-none focus:ring-2 focus:ring-[#2D6A4F] transition-all ${
               errors.country ? 'border-red-400 bg-red-50/20' : 'border-[#D8CFC4]'
             }`}
@@ -306,7 +307,7 @@ export const EnquiryForm: React.FC<EnquiryFormProps> = ({ initialProduct = '', c
             required
             value={formData.city}
             onChange={handleInputChange}
-            placeholder="e.g. Los Angeles (Port of LA) or Frankfurt"
+            placeholder="e.g. Visakhapatnam, Hyderabad, or Chennai Port"
             className={`w-full px-4 py-2.5 rounded-xl bg-white border text-sm text-[#153826] placeholder-[#8C7A6B]/60 focus:outline-none focus:ring-2 focus:ring-[#2D6A4F] transition-all ${
               errors.city ? 'border-red-400 bg-red-50/20' : 'border-[#D8CFC4]'
             }`}

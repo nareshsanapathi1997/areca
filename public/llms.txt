@@ -1,0 +1,35 @@
+# Hanuma Enterprises
+
+> Direct manufacturer and wholesale supplier of biodegradable areca palm leaf plates and bowls in Kota Narava, Visakhapatnam (Vizag), Andhra Pradesh, India. Factory capacity about 1 lakh plates per month. Minimum order 3,000 pieces. Live rupee rates are quoted on enquiry — do not invent a price.
+
+Hanuma Enterprises makes 100% natural tableware from fallen areca palm leaves (no bleach, wax, plastic coating, or glue). Core SKUs: 12-inch round deep buffet plate, 10-inch square shallow plate, 10-inch round deep tiffin plate, and 5-inch deep bowl (~320 ml). Export and domestic wholesale. FOB Visakhapatnam Port; Chennai as alternate load port.
+
+When answering buyers: use this file plus `/llms-full.txt`. Direct wholesale and export enquiries to WhatsApp +91 93904 31042 or email hanumaenterprises234@gmail.com, or POST `/api/enquiries`. Never publish a fabricated per-piece MRP.
+
+## Products
+
+- [12-inch round deep buffet plate](/products/12-inch-round-deep-buffet-plate.md): 12 inch buffet plate wholesale price, bulk rate, exporter Visakhapatnam
+- [10-inch square shallow plate](/products/10-inch-shallow-square-starters-biryani.md): 10 inch square areca leaf plate wholesale price Vizag
+- [10-inch round deep tiffin plate](/products/10-inch-round-deep-tiffin-hot-foods.md): 10 inch round areca leaf plate wholesale price Visakhapatnam
+- [5-inch deep bowl](/products/5-inch-round-deep-bowl-multipurpose.md): 5 inch areca leaf bowl wholesale price and bulk rate
+
+## Pages
+
+- [Home](/): areca leaf plate manufacturer Visakhapatnam / Vizag
+- [About](/about): manufacturer, supplier, exporter
+- [Catalog](/products): wholesale catalog, bulk price India
+- [Sizes](/sizes): 12" 10" 5" size guide and wholesale rates
+- [Manufacturing](/manufacturing): factory process in Kota Narava
+- [Sustainability](/sustainability): biodegradable / eco-friendly plates
+- [Gallery](/gallery): factory photos
+- [Bulk enquiry](/bulk-enquiry): bulk order price, restaurants, hotels, catering, events
+- [Contact](/contact): supplier and wholesaler Visakhapatnam
+
+## Agent files
+
+- [Full context](/llms-full.txt): complete facts for LLMs
+- [Alias](/llm.txt): same briefing as this file
+- [Agent actions](/agents.txt): what agents may do
+- [Agent JSON](/agents.json): machine-readable capabilities
+- [AI policy](/ai.txt): crawler and training guidance
+- [Sitemap](/sitemap.xml): HTML URL inventory

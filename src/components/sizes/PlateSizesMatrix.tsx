@@ -42,7 +42,7 @@ export const PlateSizesMatrix: React.FC = () => {
   const plateB = plateSizesData.find(p => p.id === compareIdB) || plateSizesData[3];
 
   return (
-    <section id="plate-sizes-guide" className="py-16 bg-[#FAF8F5] border-b border-[#E8E0D2]">
+    <section id="plate-sizes-guide" className="py-10 bg-[#FAF8F5] border-b border-[#E8E0D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Section Header */}
@@ -226,7 +226,7 @@ export const PlateSizesMatrix: React.FC = () => {
                     onClick={() => openBulkEnquiry(`Inquiry for ${plateA.name} (${plateA.sizeInches})`)}
                     className="w-full py-1.5 rounded-lg bg-[#153826] text-[#FAF8F5] text-[11px] font-bold hover:bg-[#2D6A4F] transition-colors"
                   >
-                    Quote Plate A
+                    Enquiry Plate A
                   </button>
                 </div>
 
@@ -257,7 +257,7 @@ export const PlateSizesMatrix: React.FC = () => {
                     onClick={() => openBulkEnquiry(`Inquiry for ${plateB.name} (${plateB.sizeInches})`)}
                     className="w-full py-1.5 rounded-lg bg-[#2D6A4F] text-[#FAF8F5] text-[11px] font-bold hover:bg-[#1B4332] transition-colors"
                   >
-                    Quote Plate B
+                    Enquiry Plate B
                   </button>
                 </div>
 
@@ -345,7 +345,7 @@ export const PlateSizesMatrix: React.FC = () => {
               <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1.5">
                 <strong className="text-sm font-bold text-[#95D5B2] block">LCL Palletized Air/Sea</strong>
                 <p className="text-[#E8E0D2]/90 leading-relaxed">
-                  Minimum Order Quantity starting at <strong>5,000 pieces per size</strong> or 25 master cartons palletized on heat-treated ISPM-15 wooden pallets.
+                  Minimum Order Quantity starting at <strong>3,000 pieces per order</strong>. Mixed sizes are accepted. Ask the factory desk for carton counts and pallet plans.
                 </p>
               </div>
             </div>
@@ -363,13 +363,13 @@ export const PlateSizesMatrix: React.FC = () => {
                 
                 {/* Natural Image Container */}
                 <div 
-                  className="relative aspect-[4/3] bg-[#EBE5D8] overflow-hidden cursor-pointer group/img"
+                  className="relative aspect-square bg-white overflow-hidden cursor-pointer group/img"
                   onClick={() => setInspectPlate(item)}
                 >
                   <img
                     src={item.image}
                     alt={`${item.name} - Genuine Areca Palm Leaf Plate`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                     loading="lazy"
                   />
@@ -467,7 +467,7 @@ export const PlateSizesMatrix: React.FC = () => {
                   onClick={() => openBulkEnquiry(`Price Inquiry for ${item.name} (${item.sizeInches})`)}
                   className="w-full inline-flex items-center justify-center gap-1 py-2.5 px-2 rounded-xl bg-[#153826] hover:bg-[#2D6A4F] text-[#FAF8F5] text-xs font-bold transition-colors shadow-sm"
                 >
-                  <span>Wholesale Quote</span>
+                  <span>Wholesale Enquiry</span>
                 </button>
                 <button
                   onClick={() => openBulkEnquiry(`Sample Request for ${item.name} (${item.sizeInches})`)}
@@ -527,10 +527,10 @@ export const PlateSizesMatrix: React.FC = () => {
                     <td className="py-3.5 px-4">{p.cartonWeightKg} kg</td>
                     <td className="py-3.5 px-4 text-right">
                       <button
-                        onClick={() => openBulkEnquiry(`Bulk Quote: ${p.name} (${p.sizeInches})`)}
+                        onClick={() => openBulkEnquiry(`Bulk Enquiry: ${p.name} (${p.sizeInches})`)}
                         className="text-xs font-bold text-[#2D6A4F] hover:text-[#153826] hover:underline"
                       >
-                        Inquire
+                        Enquire
                       </button>
                     </td>
                   </tr>
@@ -582,11 +582,11 @@ export const PlateSizesMatrix: React.FC = () => {
             <div className="overflow-y-auto p-4 sm:p-6 space-y-6">
               
               {/* Photo Display Card */}
-              <div className="relative rounded-2xl overflow-hidden bg-[#E8E0D2] border border-[#D8CFC4] aspect-[4/3] sm:aspect-[16/10] shadow-inner">
+              <div className="relative rounded-2xl overflow-hidden bg-white border border-[#D8CFC4] aspect-square shadow-inner">
                 <img
                   src={inspectPlate.image}
                   alt={`High-resolution photo of ${inspectPlate.name}`}
-                  className="w-full h-full object-contain sm:object-cover"
+                  className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
                 />
                 
@@ -657,11 +657,11 @@ export const PlateSizesMatrix: React.FC = () => {
                   onClick={() => {
                     const item = inspectPlate;
                     setInspectPlate(null);
-                    openBulkEnquiry(`Price Quote for ${item.name} (${item.sizeInches})`);
+                    openBulkEnquiry(`Price Enquiry for ${item.name} (${item.sizeInches})`);
                   }}
                   className="flex-1 sm:flex-none px-5 py-2.5 rounded-xl bg-[#153826] hover:bg-[#2D6A4F] text-[#FAF8F5] text-xs font-bold transition-colors shadow-sm"
                 >
-                  Get Wholesale Quote
+                  Get Wholesale Enquiry
                 </button>
               </div>
             </div>

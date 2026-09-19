@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { useRouter } from '../../context/RouterContext';
 import { getWhatsAppUrl } from '../../lib/whatsapp';
-import { BrandLogo } from '../common/BrandLogo';
 import { WhatsAppIcon } from '../common/Icons';
 import { LeafParticlesCanvas } from '../common/LeafParticlesCanvas';
 import { 
@@ -40,7 +39,7 @@ export const HeroSection: React.FC = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-[#F4F1EA] to-[#FAF8F5] py-16 sm:py-24 border-b border-[#E8E0D2]">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-[#F4F1EA] to-[#FAF8F5] py-10 sm:py-14 border-b border-[#E8E0D2]">
       {/* Interactive Floating Leaf & Seed Particles in Canvas */}
       <LeafParticlesCanvas density={18} />
 
@@ -84,9 +83,9 @@ export const HeroSection: React.FC = () => {
                 transition={{ delay: 0.2, duration: 0.6 }}
                 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#153826] tracking-tight leading-[1.1] font-heading"
               >
-                Naturally Made. <br />
+                Areca Leaf Plate Manufacturer <br />
                 <span className="text-[#2D6A4F] font-serif-display font-medium italic relative inline-block">
-                  Sustainably Crafted.
+                  in Visakhapatnam.
                   <span className="absolute bottom-1 left-0 w-full h-1.5 bg-[#E0A96D]/40 rounded-full -z-10" />
                 </span>
               </motion.h1>
@@ -96,7 +95,7 @@ export const HeroSection: React.FC = () => {
                 transition={{ delay: 0.3, duration: 0.6 }}
                 className="text-lg sm:text-xl text-[#3E4E42] max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal"
               >
-                HANUMA ENTERPRISES manufactures 100% natural, biodegradable Areca Palm Leaf tableware: 12" Buffet Plates, 10" Biryani Square Plates, 10" Deep Tiffin Plates, and 5" Deep Bowls (2.2" Depth). Capacity: 1 Lakh plates/month. Minimum Order Quantity: 3,000.
+                Hanuma Enterprises is an areca leaf plate manufacturer and wholesale supplier in Visakhapatnam (Vizag): 12" buffet, 10" square, 10" round deep, and 5" bowls. Enquire for factory wholesale price and bulk rate. Capacity 1 lakh plates/month. MOQ 3,000.
               </motion.p>
             </div>
 
@@ -121,7 +120,7 @@ export const HeroSection: React.FC = () => {
                 id="hero-cta-get-bulk-quote"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#FAF8F5] hover:bg-[#EBE5D8] text-[#153826] border border-[#153826]/30 text-base font-semibold transition-all shadow-sm hover:shadow hover:-translate-y-0.5 duration-200 cursor-pointer"
               >
-                <span>Get a Bulk Quote</span>
+                <span>Get a Bulk Enquiry</span>
               </button>
 
               <a
@@ -178,11 +177,11 @@ export const HeroSection: React.FC = () => {
                 style={{ transformStyle: 'preserve-3d' }}
                 className="rounded-3xl p-3 bg-gradient-to-tr from-[#EBE5D8] to-[#FAF8F5] shadow-2xl border border-[#D8CFC4]/70 relative"
               >
-                <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-[#E8E0D2] group">
+                <div className="relative rounded-2xl overflow-hidden aspect-square bg-white group">
                   <img
-                    src="/images/areca-original/areca_plate_original_1.jpg"
-                    alt="Authentic Areca Palm Leaf Plate displaying natural woody grain and heat-pressed rim"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    src="/images/areca-original/areca_plate_12_inch_round_deep.jpg"
+                    alt="12 inch round deep areca palm leaf buffet plate"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
                     referrerPolicy="no-referrer"
                     loading="eager"
                   />
@@ -194,27 +193,6 @@ export const HeroSection: React.FC = () => {
                       transform: `translate(${mousePos.x * 40}px, ${mousePos.y * 40}px)`
                     }}
                   />
-
-                  {/* Official Hanuma Enterprises Brand Seal */}
-                  <div className="absolute top-3 left-3">
-                    <BrandLogo variant="badge" />
-                  </div>
-
-                  {/* Subtle overlaid badge */}
-                  <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-[#153826]/90 backdrop-blur-md text-[#FAF8F5] border border-white/10 shadow-lg">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <div className="text-xs uppercase font-semibold text-[#95D5B2] tracking-wider flex items-center gap-1.5">
-                          <Sparkles className="w-3.5 h-3.5 text-[#E0A96D]" />
-                          <span>Natural Woody Grain</span>
-                        </div>
-                        <div className="text-sm font-medium">100% Fallen Areca Palm Sheaths</div>
-                      </div>
-                      <span className="text-xs px-2.5 py-1 rounded bg-[#2D6A4F] text-[#FAF8F5] font-semibold shadow-sm">
-                        Zero Trees Cut
-                      </span>
-                    </div>
-                  </div>
                 </div>
               </motion.div>
 
@@ -246,7 +224,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Trust Indicators Bar (Bottom of Hero) with Staggered Entrance */}
-        <div className="mt-16 pt-8 border-t border-[#D8CFC4]/60">
+        <div className="mt-8 pt-6 border-t border-[#D8CFC4]/60">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {trustBadges.map((badge, idx) => {
               const IconComp = badge.icon;

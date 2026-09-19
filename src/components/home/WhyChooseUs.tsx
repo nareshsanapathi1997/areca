@@ -20,7 +20,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export const WhyChooseUs: React.FC = () => {
   return (
-    <section className="py-20 bg-[#FAF8F5] border-b border-[#E8E0D2]">
+    <section className="py-10 bg-[#FAF8F5] border-b border-[#E8E0D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

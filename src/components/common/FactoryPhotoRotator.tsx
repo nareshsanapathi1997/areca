@@ -27,34 +27,50 @@ const factoryPhotos = [
   {
     id: 'operator-press',
     title: 'Factory Pressing & Finished Plate Inspection',
-    subtitle: 'HANUMA ENTERPRISES workshop operator holding freshly pressed areca plate at hydraulic press',
-    src: '/images/areca-original/areca_plate_original_1.jpg',
+    subtitle: 'Hanuma Enterprises workshop operator holding a freshly pressed areca plate at the hydraulic press',
+    src: '/images/areca-original/factory_press_operator.jpg',
     badge: 'Kota Narava Factory Unit',
     highlight: 'Real Factory Verification'
   },
   {
-    id: 'buffet-plate-detail',
-    title: '12" Round Deep Buffet Plate Texture',
-    subtitle: 'Macro view showing natural heat-pressed palm leaf grain striations and smooth rim flange',
-    src: '/images/areca-original/areca_plate_original_2.jpg',
-    badge: '100% Fallen Palm Sheath',
-    highlight: 'Chemical-Free Finish'
+    id: 'leaf-washing',
+    title: 'Freshwater Leaf Washing',
+    subtitle: 'Fallen areca sheaths cleaned in potable water with no chemical detergents',
+    src: '/images/areca-original/factory_leaf_washing.jpg',
+    badge: 'Zero Chemicals',
+    highlight: 'Wash Line'
   },
   {
-    id: 'stacked-bulk',
-    title: 'Finished Plates Stack & Calibrated Thickness',
-    subtitle: 'Rigid uniform stack demonstrating consistent 1.6mm gauge and non-stick release',
-    src: '/images/areca-original/areca_plates_stack_1.jpg',
-    badge: '1 Lakh Plates / Month',
-    highlight: 'Wholesale Ready'
+    id: 'sun-drying',
+    title: 'Sun & Solar Drying',
+    subtitle: 'Washed sheaths dried on raised racks to the target moisture range',
+    src: '/images/areca-original/factory_sun_drying.jpg',
+    badge: '8–10% Moisture',
+    highlight: 'Solar Dried'
   },
   {
-    id: 'multi-shape',
-    title: '4 Core Manufactured Product Lineup',
-    subtitle: '12" Round Deep, 10" Shallow Square, 10" Round Deep & 5" Round Deep Bowl',
-    src: '/images/areca-original/areca_plates_multi.jpg',
+    id: 'grain-sorting',
+    title: 'Thickness & Grain Sorting',
+    subtitle: 'Manual grading by fiber density before each sheath goes to the press',
+    src: '/images/areca-original/factory_grain_sorting.jpg',
+    badge: 'Hand Graded',
+    highlight: 'QA Sorting'
+  },
+  {
+    id: 'quality-inspection',
+    title: 'Finished Plate Quality Inspection',
+    subtitle: 'Each lot checked for rim integrity, warp, pinholes, and surface finish',
+    src: '/images/areca-original/factory_quality_inspection.jpg',
+    badge: '100% Visual Check',
+    highlight: 'QA Bench'
+  },
+  {
+    id: 'export-packaging',
+    title: 'Wholesale Export Packaging',
+    subtitle: 'Finished plates packed in moisture-barrier cartons for factory-direct dispatch',
+    src: '/images/areca-original/factory_export_packaging.jpg',
     badge: 'MOQ: 3,000 Pcs',
-    highlight: '4 Core Formats'
+    highlight: 'Export Ready'
   }
 ];
 
@@ -114,7 +130,7 @@ export const FactoryPhotoRotator: React.FC<FactoryPhotoRotatorProps> = ({ classN
             </span>
           </div>
           <h3 className="text-xl sm:text-2xl font-extrabold font-heading text-[#FAF8F5]">
-            HANUMA ENTERPRISES — Real Factory Photo & 360° Inspection
+            Hanuma Enterprises — Real Factory Photo & 360° Inspection
           </h3>
           <p className="text-xs sm:text-sm text-[#C2B5A0] mt-0.5">
             Examine our actual production facility, hydraulic thermal press, and finished areca tableware. Use the interactive controls to rotate and zoom.
@@ -298,10 +314,10 @@ export const FactoryPhotoRotator: React.FC<FactoryPhotoRotatorProps> = ({ classN
             <div className="bg-white p-4 rounded-2xl border border-[#E8E0D2] space-y-2.5 text-xs text-[#4A5D4E]">
               <div className="flex items-center gap-2 font-bold text-[#153826] text-sm font-heading">
                 <Building2 className="w-4 h-4 text-[#2D6A4F]" />
-                <span>HANUMA ENTERPRISES</span>
+                <span>Hanuma Enterprises</span>
               </div>
               <div className="space-y-1 text-[11px] leading-relaxed">
-                <p><strong>Factory Address:</strong> 2-88/1, kota narava, Visakhapatnam, Andhra Pradesh - 530027, India</p>
+                <p><strong>Factory Address:</strong> 2-88/1, Kota Narava, Visakhapatnam, Andhra Pradesh - 530027, India</p>
                 <p><strong>Email:</strong> hanumaenterprises234@gmail.com</p>
                 <p><strong>Monthly Output:</strong> 1 Lakh Plates (Heavy-Duty Hydraulic Dies)</p>
                 <p><strong>Minimum Order:</strong> 3,000 pieces per order</p>
@@ -320,7 +336,7 @@ export const FactoryPhotoRotator: React.FC<FactoryPhotoRotatorProps> = ({ classN
               className="w-full py-3 px-4 rounded-2xl bg-[#153826] hover:bg-[#1E4330] text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <Sparkles className="w-4 h-4 text-[#E0A96D]" />
-              <span>Inquire for 3,000+ MOQ Bulk Order</span>
+              <span>Enquire for 3,000+ MOQ Bulk Order</span>
             </button>
           </div>
 

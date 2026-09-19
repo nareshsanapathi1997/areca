@@ -46,7 +46,7 @@ export const BulkEnquiryModal: React.FC = () => {
         <button
           onClick={closeBulkModal}
           className="absolute top-5 right-5 p-2 rounded-full bg-[#EBE5D8] hover:bg-[#E0D8C7] text-[#153826] transition-colors z-20 focus:outline-none"
-          aria-label="Close quote modal"
+          aria-label="Close enquiry"
         >
           <X className="w-5 h-5" />
         </button>

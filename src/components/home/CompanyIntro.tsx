@@ -1,65 +1,48 @@
 import React from 'react';
 import { useRouter } from '../../context/RouterContext';
 import { companyStats, companyHighlights } from '../../data/company';
-import { ArrowRight, CheckCircle2, Factory, Leaf, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Factory } from 'lucide-react';
 
 export const CompanyIntro: React.FC = () => {
   const { navigate } = useRouter();
 
   return (
-    <section className="py-20 bg-[#FAF8F5] border-b border-[#E8E0D2]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
-          {/* Left Column: Visual Factory / Plantation Image (5 cols) */}
-          <div className="lg:col-span-5 space-y-4">
-            <div className="relative rounded-2xl overflow-hidden shadow-lg border border-[#D8CFC4] bg-[#EBE5D8] aspect-[4/3]">
-              <img
-                src="/images/areca-original/areca_leaf_machine_press.jpg"
-                alt="Areca Palm Leaf Thermal Hydraulic Press Machine in Production"
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#153826]/70 via-transparent to-transparent flex items-end p-6">
-                <div className="text-[#FAF8F5]">
-                  <p className="text-xs uppercase font-semibold tracking-wider text-[#95D5B2]">
-                    Sustainable Manufacturing Facility
-                  </p>
-                  <p className="text-sm font-medium mt-1">
-                    Multi-station hydraulic press lines engineered for clean, high-volume production.
-                  </p>
+    <section className="py-10 bg-[#FAF8F5] border-b border-[#E8E0D2]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+        <div className="rounded-2xl overflow-hidden shadow-lg border border-[#D8CFC4] bg-white">
+          <img
+            src="/images/areca_product_size_guide.png"
+            alt="Areca palm leaf product range: 12 inch round deep buffet plate, 10 inch shallow square, 10 inch round deep tiffin plate, and 5 inch deep bowl"
+            className="block w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+              <div className="space-y-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#2D6A4F]">
+                  Our Manufacturing Heritage
+                </span>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-[#153826] font-heading">
+                  From Nature to Table
+                </h2>
+              </div>
+              <div className="p-4 rounded-xl bg-[#F4F1EA] border border-[#E8E0D2] flex items-center justify-between gap-4 text-xs text-[#3E4E42] sm:min-w-[280px]">
+                <div className="flex items-center gap-2">
+                  <Factory className="w-4 h-4 text-[#2D6A4F]" />
+                  <span className="font-semibold text-[#153826]">Production Capacity:</span>
                 </div>
+                <span className="font-bold text-[#153826] bg-[#EBE5D8] px-2.5 py-1 rounded">
+                  {companyStats.productionCapacity}
+                </span>
               </div>
-            </div>
-
-            {/* Quick stats mini card */}
-            <div className="p-4 rounded-xl bg-[#F4F1EA] border border-[#E8E0D2] flex items-center justify-between text-xs text-[#3E4E42]">
-              <div className="flex items-center gap-2">
-                <Factory className="w-4 h-4 text-[#2D6A4F]" />
-                <span className="font-semibold text-[#153826]">Production Capacity:</span>
-              </div>
-              <span className="font-bold text-[#153826] bg-[#EBE5D8] px-2.5 py-1 rounded">
-                {companyStats.productionCapacity}
-              </span>
-            </div>
-          </div>
-
-          {/* Right Column: Narrative & Pillars (7 cols) */}
-          <div className="lg:col-span-7 space-y-6">
-            
-            <div className="space-y-2">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#2D6A4F]">
-                Our Manufacturing Heritage
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#153826] font-heading">
-                From Nature to Table
-              </h2>
             </div>
 
             <p className="text-base sm:text-lg text-[#3E4E42] leading-relaxed">
-              We manufacture premium eco-friendly disposable tableware crafted exclusively from 
-              <strong className="text-[#153826] font-semibold"> naturally fallen Areca Palm leaves</strong>. Located in the heart of India's lush areca plantation belt, we transform these discarded natural sheaths into hygienic, exceptionally durable, and compostable tableware through precise freshwater washing, solar drying, and high-heat hydraulic press molding.
+              We manufacture eco-friendly disposable tableware from
+              <strong className="text-[#153826] font-semibold"> naturally fallen areca palm leaves</strong>
+              {' '}at our Kota Narava factory in Visakhapatnam (Vizag). Leaves are washed in potable water, solar-dried, and formed in high-heat hydraulic presses into plates and bowls.
             </p>
 
             {/* 4 Core Pillars */}
@@ -98,8 +81,6 @@ export const CompanyIntro: React.FC = () => {
                 <ArrowRight className="w-4 h-4 text-[#2D6A4F]" />
               </button>
             </div>
-
-          </div>
 
         </div>
       </div>

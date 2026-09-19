@@ -29,7 +29,7 @@ export const AboutPage: React.FC = () => {
             <span>Company Profile & Factory Heritage</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#153826] font-heading tracking-tight">
-            Rooted in Nature. Driven by Manufacturing Discipline.
+            Areca Leaf Plate Manufacturer & Supplier, Visakhapatnam
           </h1>
           <p className="text-base sm:text-lg text-[#526356] leading-relaxed">
             {siteConfig.legalName} is a direct manufacturer and bulk exporter of 100% natural, biodegradable Areca palm leaf tableware operating from Kota Narava, Visakhapatnam, Andhra Pradesh, India.
@@ -54,7 +54,7 @@ export const AboutPage: React.FC = () => {
               Our manufacturing unit at Kota Narava, Visakhapatnam was established to give these magnificent natural leaves a higher, noble purpose. By combining artisanal sorting with modern hydraulic heat press technology, we convert this 100% natural biological resource into rigid, elegant, and food-safe plates and bowls that replace single-use plastics globally.
             </p>
             <p>
-              Every stage of our facility operates without synthetic additives, chemical bleaches, or petroleum waxes. We pride ourselves on clean potable spring washing, solar-assisted drying tunnels, and strict multi-point defect inspections.
+              Every stage of our facility operates without synthetic additives, chemical bleaches, or petroleum waxes. We use potable factory water for washing, solar-assisted drying, and multi-point visual inspection.
             </p>
 
             <div className="pt-2 flex flex-wrap gap-4 text-xs font-semibold text-[#153826]">
@@ -166,7 +166,7 @@ export const AboutPage: React.FC = () => {
               onClick={() => openBulkEnquiry()}
               className="px-6 py-3.5 rounded-xl bg-[#FAF8F5] hover:bg-[#EBE5D8] text-[#153826] font-bold text-sm shadow-md transition-colors"
             >
-              Request a Bulk Quote
+              Request a Bulk Enquiry
             </button>
             <button
               onClick={() => navigate('/products')}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+
+# LLM / agent discovery
+# /llms.txt  /llm.txt  /llms-full.txt  /agents.txt  /agents.json  /ai.txt

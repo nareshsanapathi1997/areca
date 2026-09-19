@@ -40,7 +40,7 @@ export const plateSizesData: PlateSizeItem[] = [
     cartonCount: 200,
     cartonDimensions: '630 x 320 x 320 mm',
     cartonWeightKg: 10.8,
-    image: '/images/areca-original/areca_plate_round_yercaud1.jpg',
+    image: '/images/areca-original/areca_plate_12_inch_round_deep.jpg',
     popularRank: 1,
     isPopular: true
   },
@@ -62,7 +62,7 @@ export const plateSizesData: PlateSizeItem[] = [
     cartonCount: 200,
     cartonDimensions: '530 x 275 x 275 mm',
     cartonWeightKg: 9.6,
-    image: '/images/areca-original/areca_plate_round_yercaud2.jpg',
+    image: '/images/areca-original/areca_plate_10_inch_square_shallow.jpg',
     popularRank: 2,
     isPopular: true
   },
@@ -84,7 +84,7 @@ export const plateSizesData: PlateSizeItem[] = [
     cartonCount: 200,
     cartonDimensions: '530 x 270 x 270 mm',
     cartonWeightKg: 9.2,
-    image: '/images/areca-original/areca_plate_original_2.jpg',
+    image: '/images/areca-original/areca_plate_10_inch_round_deep.jpg',
     popularRank: 3,
     isPopular: true
   },
@@ -106,7 +106,7 @@ export const plateSizesData: PlateSizeItem[] = [
     cartonCount: 400,
     cartonDimensions: '460 x 300 x 280 mm',
     cartonWeightKg: 9.8,
-    image: '/images/areca-original/areca_plate_round_yercaud3.jpg',
+    image: '/images/areca-original/areca_bowl_5_inch_round_deep.jpg',
     popularRank: 4,
     isPopular: true
   }

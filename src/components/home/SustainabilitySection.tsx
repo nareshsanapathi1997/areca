@@ -47,7 +47,7 @@ export const SustainabilitySection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#153826] text-[#FAF8F5] relative overflow-hidden border-b border-[#1B4332]">
+    <section className="py-10 bg-[#153826] text-[#FAF8F5] relative overflow-hidden border-b border-[#1B4332]">
       {/* Background botanical ambient glow */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#2D6A4F]/30 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#40916C]/20 rounded-full blur-3xl pointer-events-none"></div>
@@ -106,7 +106,7 @@ export const SustainabilitySection: React.FC = () => {
               onClick={() => openBulkEnquiry()}
               className="w-full sm:w-auto px-6 py-3 rounded-xl bg-[#FAF8F5] hover:bg-[#EBE5D8] text-[#153826] font-bold text-sm shadow-md transition-colors"
             >
-              Request Wholesale Quote
+              Request Wholesale Enquiry
             </button>
             <button
               onClick={() => navigate('/sustainability')}

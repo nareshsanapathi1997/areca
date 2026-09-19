@@ -11,7 +11,6 @@ import {
   Scissors, 
   SearchCheck, 
   Package, 
-  Truck,
   ArrowRight,
   ShieldCheck,
   ChevronLeft,
@@ -26,8 +25,7 @@ const processIconMap: Record<string, React.ElementType> = {
   Flame,
   Scissors,
   SearchCheck,
-  Package,
-  Truck
+  Package
 };
 
 export const ProcessTimeline: React.FC = () => {
@@ -39,7 +37,7 @@ export const ProcessTimeline: React.FC = () => {
   const progressPercent = ((activeStep + 1) / manufacturingSteps.length) * 100;
 
   return (
-    <section className="py-20 bg-[#FAF8F5] border-b border-[#E8E0D2] relative overflow-hidden">
+    <section className="py-10 bg-[#FAF8F5] border-b border-[#E8E0D2] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
@@ -59,7 +57,7 @@ export const ProcessTimeline: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-3xl sm:text-4xl font-extrabold text-[#153826] font-heading"
           >
-            Our 9-Stage Manufacturing Process
+            Our 8-Stage Manufacturing Process
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 15 }}
@@ -75,7 +73,7 @@ export const ProcessTimeline: React.FC = () => {
         {/* Animated Progress Track */}
         <div className="max-w-4xl mx-auto mb-6 px-2">
           <div className="flex items-center justify-between text-xs font-bold text-[#6B4F35] mb-2">
-            <span>Stage {activeStep + 1} of 9: {currentStepData.title}</span>
+            <span>Stage {activeStep + 1} of {manufacturingSteps.length}: {currentStepData.title}</span>
             <span className="font-mono text-[#2D6A4F]">{Math.round(progressPercent)}% Workflow Completed</span>
           </div>
           <div className="w-full h-2 rounded-full bg-[#E5DFD0] overflow-hidden">
@@ -138,7 +136,7 @@ export const ProcessTimeline: React.FC = () => {
                   <div className="absolute top-4 left-4">
                     <span className="px-3.5 py-1.5 rounded-lg text-xs font-extrabold uppercase bg-[#153826] text-[#FAF8F5] shadow-md flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-[#52B788] animate-ping" />
-                      Stage {currentStepData.step} of 9
+                      Stage {currentStepData.step} of {manufacturingSteps.length}
                     </span>
                   </div>
                 </div>

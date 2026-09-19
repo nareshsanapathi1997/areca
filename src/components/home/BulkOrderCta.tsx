@@ -26,7 +26,7 @@ export const BulkOrderCta: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#153826] via-[#1B4332] to-[#0F281B] text-[#FAF8F5] relative overflow-hidden">
+    <section className="py-10 bg-gradient-to-br from-[#153826] via-[#1B4332] to-[#0F281B] text-[#FAF8F5] relative overflow-hidden">
       {/* Decorative background leaf illustration / circles */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-[#2D6A4F]/25 blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-[#E0A96D]/15 blur-3xl pointer-events-none"></div>
@@ -61,7 +61,7 @@ export const BulkOrderCta: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-base sm:text-lg text-[#C2B5A0] leading-relaxed max-w-2xl mx-auto"
           >
-            We supply Areca Leaf Tableware for wholesalers, distributors, caterers, restaurants, events and other bulk requirements.
+            We supply areca leaf plates wholesale from Visakhapatnam for restaurants, hotels, catering, events, and distributors. Enquire for bulk price.
           </motion.p>
 
           {/* Quick Wholesale Benefits */}
@@ -108,7 +108,7 @@ export const BulkOrderCta: React.FC = () => {
               className="shimmer-btn-effect w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-[#FAF8F5] hover:bg-[#EBE5D8] text-[#153826] font-bold text-base shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-200 cursor-pointer"
             >
               <Sparkles className="w-4 h-4 text-[#2D6A4F]" />
-              <span>Request a Bulk Quote</span>
+              <span>Request a Bulk Enquiry</span>
               <ArrowRight className="w-4 h-4" />
             </button>
 

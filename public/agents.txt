@@ -1,0 +1,10 @@
+# agents.txt
+# Standard: https://agents-txt.com
+# JSON: /agents.json
+# Content: /llms.txt
+# Full: /llms-full.txt
+
+Contact: mailto:hanumaenterprises234@gmail.com
+WhatsApp: https://wa.me/919390431042
+Enquiry: POST /api/enquiries
+Docs: /llms.txt

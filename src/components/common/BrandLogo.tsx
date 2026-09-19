@@ -1,5 +1,6 @@
 import React from 'react';
-import { siteConfig } from '../../data/site';
+
+export const BRAND_HEADER_LOGO = '/images/hanuma_brand_logo.png';
 
 interface BrandLogoProps {
   variant?: 'full' | 'icon-only' | 'footer' | 'badge' | 'banner' | 'header-image';
@@ -14,22 +15,21 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   className = '',
   showTagline = true
 }) => {
-  // If header-image variant is requested, return the official header logo image directly
+  // Official photographed brand lockup (H mark + wordmark + tagline)
   if (variant === 'header-image' || variant === 'full') {
     const heightClass = {
-      sm: 'h-9 sm:h-10',
-      md: 'h-10 sm:h-12 md:h-13',
-      lg: 'h-12 sm:h-14 md:h-16',
-      xl: 'h-16 sm:h-20 md:h-24'
+      sm: 'h-10 sm:h-11',
+      md: 'h-12 sm:h-14 md:h-16',
+      lg: 'h-14 sm:h-16 md:h-[4.5rem]',
+      xl: 'h-20 sm:h-24 md:h-28'
     }[size];
 
     return (
       <div className={`flex items-center shrink-0 ${className}`}>
         <img
-          src="/images/hanuma_header_logo.svg"
-          alt="Hanuma Enterprises - 100% Biodegradable • Eco-Friendly • Chemical-Free"
-          className={`${heightClass} w-auto object-contain drop-shadow-xs select-none`}
-          referrerPolicy="no-referrer"
+          src={BRAND_HEADER_LOGO}
+          alt="Hanuma Enterprises - Natural tableware for a greener tomorrow"
+          className={`${heightClass} w-auto max-w-[240px] sm:max-w-[320px] md:max-w-[400px] lg:max-w-[480px] object-contain object-left select-none bg-transparent`}
         />
       </div>
     );
@@ -164,27 +164,15 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     );
   }
 
-  // Footer Variant (Tailored for dark forest green background)
+  // Footer Variant (light card so the official lockup stays readable on dark green)
   if (variant === 'footer') {
     return (
-      <div className={`flex items-center gap-3.5 ${className}`}>
-        <div className={`shrink-0 ${iconDimensions.box}`}>
-          {LogoMarkSVG}
-        </div>
-        <div className="text-left">
-          <div className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-[#FAF8F5]">
-            Hanuma Enterprises
-          </div>
-          {showTagline && (
-            <div className="flex items-center gap-1.5 text-[10.5px] sm:text-xs text-[#A3B899] font-medium tracking-wide mt-0.5">
-              <span>100% Biodegradable</span>
-              <span className="text-[#E0A96D]">•</span>
-              <span>Eco-Friendly</span>
-              <span className="text-[#E0A96D]">•</span>
-              <span>Chemical-Free</span>
-            </div>
-          )}
-        </div>
+      <div className={`inline-flex items-center max-w-full ${className}`}>
+        <img
+          src={BRAND_HEADER_LOGO}
+          alt="Hanuma Enterprises - Natural tableware for a greener tomorrow"
+          className="h-12 sm:h-16 md:h-20 w-auto max-w-[min(100%,20rem)] object-contain bg-[#FAF8F5] rounded-2xl px-2.5 py-1.5 sm:px-3 sm:py-2"
+        />
       </div>
     );
   }
@@ -192,79 +180,28 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   // Badge Variant (Pill container)
   if (variant === 'badge') {
     return (
-      <div className={`inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/95 border border-[#E8E0D2] shadow-sm backdrop-blur-md ${className}`}>
-        <div className="w-6 h-6 shrink-0">
-          {LogoMarkSVG}
-        </div>
-        <div className="text-left leading-tight">
-          <span className="text-xs font-bold text-[#0D3B24] font-heading block">
-            Hanuma Enterprises
-          </span>
-          <span className="text-[9px] text-[#526356] font-medium uppercase tracking-wider block">
-            100% Biodegradable
-          </span>
-        </div>
+      <div className={`inline-flex items-center gap-2 px-2 py-1 rounded-full bg-white/95 border border-[#E8E0D2] shadow-sm backdrop-blur-md ${className}`}>
+        <img
+          src={BRAND_HEADER_LOGO}
+          alt="Hanuma Enterprises"
+          className="h-8 w-auto max-w-[180px] object-contain"
+        />
       </div>
     );
   }
 
-  // Luxury Banner Variant (Matches the user's uploaded banner image)
+  // Official luxury banner — the photographed brand lockup
   if (variant === 'banner') {
     return (
-      <div className={`relative overflow-hidden rounded-3xl bg-[#FAF8F5] border border-[#E8E0D2] shadow-xl p-6 sm:p-10 md:p-12 ${className}`}>
-        {/* Subtle Linen Background Texture */}
-        <div className="absolute inset-0 bg-[radial-gradient(#2D6A4F0a_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
-
-        {/* Top-Left Palm Frond Decorative Illustration */}
-        <div className="absolute -top-10 -left-10 w-48 h-48 sm:w-64 sm:h-64 pointer-events-none opacity-90">
-          <svg viewBox="0 0 200 200" fill="none" className="w-full h-full drop-shadow-md">
-            <path d="M0 0 Q60 60 120 140" stroke="#1E5438" strokeWidth="3" />
-            <path d="M20 20 C50 15 80 30 110 50 C85 55 55 45 20 20 Z" fill="#2D6A4F" />
-            <path d="M40 40 C75 35 110 55 140 80 C110 85 80 75 40 40 Z" fill="#388E3C" />
-            <path d="M60 60 C100 55 140 80 170 110 C135 115 100 100 60 60 Z" fill="#2D6A4F" />
-            <path d="M80 80 C120 78 160 105 185 140 C150 142 120 125 80 80 Z" fill="#4CAF50" opacity="0.8" />
-          </svg>
-        </div>
-
-        {/* Top-Right Wooden Platter & Palm Frond Decorative Illustration */}
-        <div className="absolute -top-8 -right-8 w-44 h-44 sm:w-60 sm:h-60 pointer-events-none opacity-90">
-          <svg viewBox="0 0 200 200" fill="none" className="w-full h-full drop-shadow-lg">
-            {/* Wooden cross-section disk */}
-            <circle cx="150" cy="50" r="70" fill="#B3804D" stroke="#8C5C2E" strokeWidth="5" />
-            <circle cx="150" cy="50" r="55" fill="#C99765" stroke="#9A6B39" strokeWidth="2" strokeDasharray="6 3" />
-            <circle cx="150" cy="50" r="38" fill="#DDB07F" />
-            {/* Palm branch overlapping disk */}
-            <path d="M120 0 Q100 80 60 150" stroke="#153826" strokeWidth="3" />
-            <path d="M100 30 C75 45 60 70 50 100 C70 85 85 65 100 30 Z" fill="#2D6A4F" />
-            <path d="M85 60 C60 80 50 110 40 140 C60 120 75 95 85 60 Z" fill="#52B788" />
-            <path d="M75 90 C50 115 45 145 35 170 C55 150 65 125 75 90 Z" fill="#2D6A4F" />
-          </svg>
-        </div>
-
-        {/* Centered Brand Presentation */}
-        <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 max-w-3xl mx-auto py-2">
-          {/* Large Emblem */}
-          <div className="w-24 h-24 sm:w-28 sm:h-28 shrink-0">
-            {LogoMarkSVG}
-          </div>
-
-          {/* Typography */}
-          <div className="text-center sm:text-left space-y-1">
-            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#0D3B24]">
-              Hanuma Enterprises
-            </h2>
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 pt-1 text-xs sm:text-sm md:text-base font-semibold text-[#1E4330]">
-              <span>100% Biodegradable</span>
-              <span className="text-[#C58C28]">•</span>
-              <span>Eco-Friendly</span>
-              <span className="text-[#C58C28]">•</span>
-              <span>Chemical-Free</span>
-            </div>
-            <p className="text-xs text-[#6B4F35] pt-2">
-              Direct Factory Manufacturer — Kota Narava, Visakhapatnam | Capacity: 1 Lakh Plates/Month
-            </p>
-          </div>
-        </div>
+      <div className={`relative overflow-hidden rounded-3xl bg-[#FAF8F5] border border-[#E8E0D2] shadow-xl ${className}`}>
+        <img
+          src={BRAND_HEADER_LOGO}
+          alt="Hanuma Enterprises - Natural tableware for a greener tomorrow"
+          className="w-full h-auto object-contain"
+        />
+        <p className="relative z-10 text-center text-xs text-[#6B4F35] pb-5 px-4">
+          Direct Factory Manufacturer — Kota Narava, Visakhapatnam | Capacity: 1 Lakh Plates/Month
+        </p>
       </div>
     );
   }

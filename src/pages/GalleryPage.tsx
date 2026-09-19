@@ -20,7 +20,7 @@ export const GalleryPage: React.FC = () => {
             Manufacturing & Product Gallery
           </h1>
           <p className="text-base text-[#526356] leading-relaxed">
-            Take a transparent look inside our facility operations, production press lines, hygienic sorting tables, finished tableware ranges, and container dispatch bays.
+            Factory photos from Kota Narava, Visakhapatnam: wash, dry, sort, press, inspection, packing, and finished plates and bowls.
           </p>
         </div>
 

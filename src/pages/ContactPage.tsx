@@ -25,10 +25,10 @@ export const ContactPage: React.FC = () => {
             <span>Direct Plant Operations & Support</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#153826] font-heading tracking-tight">
-            Contact Our Manufacturing Unit
+            Areca Leaf Plate Supplier in Visakhapatnam
           </h1>
           <p className="text-base text-[#526356] leading-relaxed">
-            Get in touch with our factory procurement desk, export representatives, or arrange an in-person facility inspection.
+            Contact our Kota Narava, Vizag factory for wholesale price, bulk orders, and export. Areca leaf plate manufacturer and supplier in Visakhapatnam, Andhra Pradesh.
           </p>
         </div>
 
@@ -41,6 +41,9 @@ export const ContactPage: React.FC = () => {
             <div className="font-bold text-sm text-[#153826]">Factory Address</div>
             <p className="text-xs text-[#526356] leading-relaxed">
               {siteConfig.address.factoryAddress}, {siteConfig.address.city}, {siteConfig.address.state} - {siteConfig.address.pincode}
+            </p>
+            <p className="text-[11px] text-[#6B4F35]">
+              17°44'18.3"N 83°11'11.5"E
             </p>
           </div>
 
@@ -66,7 +69,7 @@ export const ContactPage: React.FC = () => {
               {siteConfig.email}
             </p>
             <p className="text-[11px] text-[#6B4F35]">
-              Formal quotes & spec sheets
+              Wholesale rates & spec sheets
             </p>
           </div>
 
@@ -98,19 +101,14 @@ export const ContactPage: React.FC = () => {
             {/* Map Card */}
             <div className="rounded-3xl bg-[#F4F1EA] border border-[#E8E0D2] overflow-hidden shadow-sm">
               <div className="relative aspect-[16/10] bg-[#E0D8C7] overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=800&q=80"
-                  alt="Karnataka Areca Palm Belt Location Map"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                <iframe
+                  title="Hanuma Enterprises factory map, Kota Narava, Visakhapatnam"
+                  src={`https://maps.google.com/maps?q=${siteConfig.address.latitude},${siteConfig.address.longitude}&z=17&hl=en&output=embed`}
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
                 />
-                <div className="absolute inset-0 bg-[#153826]/40 backdrop-blur-[2px] flex items-center justify-center p-6 text-center">
-                  <div className="bg-[#FAF8F5]/95 p-4 rounded-2xl shadow-lg border border-[#D8CFC4] max-w-xs space-y-1">
-                    <MapPin className="w-6 h-6 text-[#2D6A4F] mx-auto" />
-                    <div className="text-xs font-bold text-[#153826] font-heading">Manufacturing Facility</div>
-                    <div className="text-[11px] text-[#526356]">{siteConfig.address.city}, {siteConfig.address.state}, {siteConfig.address.country}</div>
-                  </div>
-                </div>
               </div>
 
               <div className="p-6 space-y-4 text-xs text-[#3E4E42]">
@@ -124,22 +122,31 @@ export const ContactPage: React.FC = () => {
                     <Ship className="w-4 h-4 text-[#2D6A4F] shrink-0 mt-0.5" />
                     <div>
                       <strong className="text-[#153826] block">Nearest Sea Port (FOB Dispatch):</strong>
-                      <span>New Mangalore Port (NMPT) - approx. 140 km from manufacturing plant. Direct ocean feeder connections to Dubai, Colombo, and Singapore hubs.</span>
+                      <span>Visakhapatnam Port (Vizag) — close to our Kota Narava factory. Direct ocean connections via East Coast trade lanes, with Chennai as an alternate load port on request.</span>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-2">
                     <Building2 className="w-4 h-4 text-[#2D6A4F] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#153826] block">Dry Port & Air Cargo:</strong>
-                      <span>Bengaluru Inland Container Depot (ICD) & Kempegowda International Airport (BLR) for express sample dispatches.</span>
+                      <strong className="text-[#153826] block">Air cargo & samples:</strong>
+                      <span>Visakhapatnam International Airport (VTZ) for sample kits and urgent parcels. Hyderabad and Chennai air cargo as backups for export samples.</span>
                     </div>
                   </div>
                 </div>
 
-                <div className="pt-2">
+                <div className="pt-2 space-y-2">
                   <a
-                    href={getWhatsAppUrl("Hello, I would like to schedule a visit to your Areca Leaf Plate manufacturing unit in Karnataka.")}
+                    href={siteConfig.address.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#153826] hover:bg-[#2D6A4F] text-white text-xs font-bold transition-all"
+                  >
+                    <MapPin className="w-4 h-4" />
+                    <span>Open factory pin in Google Maps</span>
+                  </a>
+                  <a
+                    href={getWhatsAppUrl("Hello, I would like to schedule a visit to your Areca Leaf Plate manufacturing unit in Kota Narava, Visakhapatnam.")}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-bold transition-all shadow"

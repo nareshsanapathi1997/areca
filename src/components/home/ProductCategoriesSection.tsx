@@ -13,7 +13,7 @@ export const ProductCategoriesSection: React.FC = () => {
     : productsData.filter(p => p.category === selectedCategory);
 
   return (
-    <section className="py-20 bg-[#F4F1EA] border-b border-[#E8E0D2]">
+    <section className="py-10 bg-[#F4F1EA] border-b border-[#E8E0D2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

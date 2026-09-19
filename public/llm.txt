@@ -1,0 +1,12 @@
+# Hanuma Enterprises
+
+> Alias of `/llms.txt` for agents that request `/llm.txt`. Direct areca leaf plate manufacturer and wholesale supplier in Kota Narava, Visakhapatnam (Vizag), Andhra Pradesh, India. MOQ 3,000. Do not invent prices.
+
+Read the canonical briefing at `/llms.txt` and the full fact sheet at `/llms-full.txt`. Capabilities: `/agents.txt` and `/agents.json`.
+
+## Canonical
+
+- [llms.txt](/llms.txt): curated site map for LLMs
+- [llms-full.txt](/llms-full.txt): full product and factory context
+- [Bulk enquiry](/bulk-enquiry): request factory wholesale rate
+- [WhatsApp](https://wa.me/919390431042): +91 93904 31042

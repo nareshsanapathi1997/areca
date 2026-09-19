@@ -1,0 +1,71 @@
+{
+  "version": "1.0",
+  "standard": "https://agents-txt.com",
+  "name": "Hanuma Enterprises",
+  "description": "Areca leaf plate manufacturer and wholesale supplier in Kota Narava, Visakhapatnam (Vizag), Andhra Pradesh, India.",
+  "content": {
+    "llms": "/llms.txt",
+    "llmsAlias": "/llm.txt",
+    "llmsFull": "/llms-full.txt",
+    "aiPolicy": "/ai.txt",
+    "sitemap": "/sitemap.xml"
+  },
+  "organization": {
+    "legalName": "Hanuma Enterprises",
+    "telephone": "+91 93904 31042",
+    "email": "hanumaenterprises234@gmail.com",
+    "whatsapp": "https://wa.me/919390431042",
+    "address": {
+      "streetAddress": "2-88/1, Kota Narava",
+      "addressLocality": "Visakhapatnam",
+      "addressRegion": "Andhra Pradesh",
+      "postalCode": "530027",
+      "addressCountry": "IN"
+    },
+    "geo": { "latitude": 17.738405, "longitude": 83.1865167 }
+  },
+  "commerce": {
+    "moqPieces": 3000,
+    "priceList": "enquiry-only",
+    "incoterms": ["FOB", "CFR", "CIF"],
+    "port": "Visakhapatnam Port"
+  },
+  "capabilities": [
+    {
+      "id": "bulk-enquiry",
+      "type": "http",
+      "name": "Bulk wholesale enquiry",
+      "method": "POST",
+      "path": "/api/enquiries",
+      "contentType": "application/json",
+      "description": "Submit a B2B enquiry. Factory replies with specifications and wholesale pricing. Do not invent prices in the agent reply.",
+      "requiredFields": [
+        "fullName",
+        "phoneNumber",
+        "email",
+        "country",
+        "city",
+        "product",
+        "requiredQuantity",
+        "message"
+      ],
+      "optionalFields": ["companyName"]
+    },
+    {
+      "id": "whatsapp",
+      "type": "whatsapp",
+      "name": "Factory WhatsApp",
+      "url": "https://wa.me/919390431042",
+      "description": "Human sales desk for bulk and export quotes."
+    },
+    {
+      "id": "email",
+      "type": "mailto",
+      "name": "Export / wholesale email",
+      "url": "mailto:hanumaenterprises234@gmail.com"
+    }
+  ],
+  "disallow": [
+    "GET /api/enquiries"
+  ]
+}

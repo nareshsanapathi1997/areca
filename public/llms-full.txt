@@ -1,0 +1,82 @@
+# Hanuma Enterprises — LLM / agent fact sheet
+
+> Factory-direct biodegradable areca palm leaf plates and bowls. Kota Narava, Visakhapatnam (Vizag), Andhra Pradesh, India. Wholesale rates are shared on enquiry. Do not invent a rupee price.
+
+## Identity
+
+- Legal / trade name: Hanuma Enterprises
+- Type: Manufacturer, wholesaler, exporter (B2B)
+- Factory: 2-88/1, Kota Narava, Visakhapatnam, Andhra Pradesh 530027, India
+- Coordinates: 17.738405 N, 83.1865167 E (17°44'18.3"N 83°11'11.5"E)
+- Map: https://www.google.com/maps?q=17.738405,83.1865167
+- Phone / WhatsApp: +91 93904 31042 (wa.me/919390431042)
+- Email: hanumaenterprises234@gmail.com
+- Hours: Monday–Saturday, 8:30 AM–7:00 PM IST
+- Capacity: about 1,00,000 plates per month
+- MOQ: 3,000 pieces per order (sizes may be mixed)
+
+## What we make
+
+100% naturally fallen areca palm leaf (sheath) tableware. Chemical-free: no bleach, wax, PE coating, or glue. Compostable in roughly 60–90 days. Microwave-safe for short reheating; leak-resistant for hot gravies when used as intended.
+
+### SKUs (only these four are in the live catalog)
+
+1. 12-Inch Round Deep Buffet Plate — slug `12-inch-round-deep-buffet-plate`  
+   Heavy-duty 12" (30.5 cm) deep rim for buffets, weddings, hotels. Pack: 25 pcs shrink / 8 packs per carton (200 pcs). Carton about 630 × 320 × 320 mm.
+
+2. 10-Inch Shallow Square — slug `10-inch-shallow-square-starters-biryani`  
+   10" (25.4 cm) square shallow plate for biryani, starters, kebabs. Pack: 25 / carton 200. Carton about 530 × 275 × 275 mm.
+
+3. 10-Inch Round Deep Tiffin — slug `10-inch-round-deep-tiffin-hot-foods`  
+   10" round deep plate for tiffin, curries, daily meals. Pack: 25 / carton 200. Carton about 530 × 270 × 270 mm.
+
+4. 5-Inch Round Deep Bowl — slug `5-inch-round-deep-bowl-multipurpose`  
+   5" (12.7 cm), about 2.2" / 56 mm depth, ~320 ml. Gravies, soups, desserts. Pack: 25 nested / 16 packs per carton (400 pcs). Carton about 460 × 300 × 280 mm.
+
+There is no live 3-compartment thali SKU on this site.
+
+## Pricing (important)
+
+The website does **not** list MRP or a public per-piece rate. Wholesale, bulk, exporter, and “price in India / Visakhapatnam / Vizag” searches should be answered: contact the factory for the current rate. Typical buyers: restaurants, hotels, catering, events, distributors.
+
+## Logistics
+
+- Nearest sea port: Visakhapatnam Port (Vizag). Alternate: Chennai.
+- Samples / air cargo: Visakhapatnam International Airport (VTZ).
+- Incoterms commonly used: FOB, CFR, CIF.
+- Export docs on request: phytosanitary, certificate of origin, fumigation where required.
+
+## Process (8 steps)
+
+1. Raw fallen-leaf collection from partner farms  
+2. Freshwater wash (no chemical detergents)  
+3. Sun / solar drying to about 8–10% moisture  
+4. Thickness and grain sorting  
+5. Hydraulic heat press 180–200°C (sterilizes and forms)  
+6. Trim and edge finish  
+7. Visual QA  
+8. Shrink wrap with desiccant and export cartons  
+
+## How agents should help a buyer
+
+1. Identify the SKU (12" round, 10" square, 10" round, 5" bowl) and quantity (MOQ 3,000).  
+2. Send them to `/bulk-enquiry` or POST `/api/enquiries` (JSON fields: fullName, companyName, phoneNumber, email, country, city, product, requiredQuantity, message).  
+3. Or open WhatsApp `https://wa.me/919390431042` with product, quantity, and delivery city.  
+4. Do not scrape or expose `/api/enquiries` GET as a public order list.  
+5. Do not claim the factory is in Karnataka or that the load port is Mangalore.
+
+## HTML pages
+
+- / — manufacturer Visakhapatnam  
+- /about — company  
+- /products — catalog  
+- /products/{slug} — SKU pages  
+- /sizes — size matrix  
+- /manufacturing — process  
+- /sustainability — biodegradable positioning  
+- /gallery — photos  
+- /bulk-enquiry — B2B form  
+- /contact — address and visit  
+- /privacy-policy, /terms  
+
+Markdown twins for products live at `/products/{slug}.md`.

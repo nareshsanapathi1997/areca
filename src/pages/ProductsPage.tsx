@@ -30,10 +30,10 @@ export const ProductsPage: React.FC = () => {
             <span>Complete Manufacturer Catalog</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#153826] font-heading tracking-tight">
-            Areca Palm Leaf Tableware
+            Areca Leaf Plate Wholesale Catalog
           </h1>
           <p className="text-base text-[#526356] leading-relaxed">
-            Crafted from 100% naturally fallen areca leaves. Heavy-duty, leak-proof, and microwave-safe dinnerware designed for catering, hospitality, and wholesale supply.
+            Factory wholesale price and bulk rate from Visakhapatnam (Vizag): 12 inch round buffet, 10 inch square, 10 inch round, and 5 inch areca leaf bowls. Enquire for cost per piece. MOQ 3,000.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export const ProductsPage: React.FC = () => {
             onClick={() => openBulkEnquiry('Custom Mold / Private Label OEM')}
             className="px-6 py-3.5 rounded-xl bg-[#153826] hover:bg-[#2D6A4F] text-[#FAF8F5] font-bold text-xs uppercase tracking-wider shrink-0 transition-colors shadow-md"
           >
-            Inquire About Custom Tooling
+            Enquire About Custom Tooling
           </button>
         </div>
 

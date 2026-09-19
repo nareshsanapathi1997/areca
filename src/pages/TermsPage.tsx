@@ -16,7 +16,7 @@ export const TermsPage: React.FC = () => {
             Terms & Conditions
           </h1>
           <p className="text-xs text-[#6B4F35]">
-            Last Updated: March 2025 | {siteConfig.legalName}
+            Last Updated: 19 September 2026 | {siteConfig.legalName}
           </p>
         </div>
 
@@ -49,21 +49,21 @@ export const TermsPage: React.FC = () => {
           <section className="space-y-2">
             <h2 className="text-xl font-bold text-[#153826]">4. Export Freight & Incoterms</h2>
             <p>
-              Shipments are executed under standard ICC Incoterms (commonly FOB New Mangalore / Chennai Port, CFR, or CIF). Risk of transit transfers in accordance with the specified Incoterm. Export packaging complies with international phytosanitary and maritime moisture barrier standards.
+              Shipments are executed under standard ICC Incoterms (commonly FOB Visakhapatnam Port / Chennai Port, CFR, or CIF). Risk of transit transfers in accordance with the specified Incoterm. Export packaging complies with international phytosanitary and maritime moisture barrier standards.
             </p>
           </section>
 
           <section className="space-y-2">
             <h2 className="text-xl font-bold text-[#153826]">5. Inspection & Quality Assurance</h2>
             <p>
-              Buyers or their authorized third-party inspection agencies (e.g. SGS, Bureau Veritas) are entitled to conduct pre-shipment inspections at our Karnataka manufacturing facility prior to container stuffing upon 5 business days' advance written notice.
+              Buyers or their authorized third-party inspection agencies (e.g. SGS, Bureau Veritas) are entitled to conduct pre-shipment inspections at our Visakhapatnam manufacturing facility prior to container stuffing upon 5 business days' advance written notice.
             </p>
           </section>
 
           <section className="space-y-2">
             <h2 className="text-xl font-bold text-[#153826]">6. Governing Law</h2>
             <p>
-              These commercial terms and any contracts formed hereunder shall be governed by and construed in accordance with the laws of India, with exclusive jurisdiction in the commercial courts of Karnataka, India.
+              These commercial terms and any contracts formed hereunder shall be governed by and construed in accordance with the laws of India, with exclusive jurisdiction in the commercial courts of Visakhapatnam, Andhra Pradesh, India.
             </p>
           </section>
         </div>

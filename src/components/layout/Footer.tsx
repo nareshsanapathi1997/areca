@@ -11,7 +11,6 @@ import {
   YouTubeIcon 
 } from '../common/Icons';
 import { 
-  Leaf, 
   Phone, 
   Mail, 
   MapPin, 
@@ -24,12 +23,12 @@ export const Footer: React.FC = () => {
   const { navigate, openBulkEnquiry } = useRouter();
 
   return (
-    <footer id="main-site-footer" className="bg-[#0F281B] text-[#E8E0D2] border-t border-[#1B4332] pt-16 pb-12">
+    <footer id="main-site-footer" className="bg-[#0F281B] text-[#E8E0D2] border-t border-[#1B4332] pt-10 pb-28 sm:pt-16 sm:pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#1B4332]">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 pb-10 sm:pb-12 border-b border-[#1B4332]">
           
           {/* Column 1: Brand & Factory Intro (Span 2) */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="col-span-2 space-y-4">
             <BrandLogo variant="footer" size="lg" />
 
             <p className="text-sm text-[#C2B5A0] leading-relaxed max-w-md">
@@ -64,46 +63,54 @@ export const Footer: React.FC = () => {
                 >
                   <WhatsAppIcon className="w-4 h-4 text-white" />
                 </a>
-                <a
-                  href={siteConfig.socialLinks.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-[#1B4332] hover:bg-[#2D6A4F] text-[#95D5B2] hover:text-white flex items-center justify-center border border-[#2D6A4F] transition-all hover:scale-105"
-                  title="LinkedIn"
-                  aria-label="LinkedIn"
-                >
-                  <LinkedInIcon className="w-4 h-4" />
-                </a>
-                <a
-                  href={siteConfig.socialLinks.facebook}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-[#1B4332] hover:bg-[#2D6A4F] text-[#95D5B2] hover:text-white flex items-center justify-center border border-[#2D6A4F] transition-all hover:scale-105"
-                  title="Facebook"
-                  aria-label="Facebook"
-                >
-                  <FacebookIcon className="w-4 h-4" />
-                </a>
-                <a
-                  href={siteConfig.socialLinks.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-[#1B4332] hover:bg-[#2D6A4F] text-[#95D5B2] hover:text-white flex items-center justify-center border border-[#2D6A4F] transition-all hover:scale-105"
-                  title="Instagram"
-                  aria-label="Instagram"
-                >
-                  <InstagramIcon className="w-4 h-4" />
-                </a>
-                <a
-                  href={siteConfig.socialLinks.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-[#1B4332] hover:bg-[#2D6A4F] text-[#95D5B2] hover:text-white flex items-center justify-center border border-[#2D6A4F] transition-all hover:scale-105"
-                  title="YouTube Factory Tour"
-                  aria-label="YouTube"
-                >
-                  <YouTubeIcon className="w-4 h-4" />
-                </a>
+                {siteConfig.socialLinks.linkedin && (
+                  <a
+                    href={siteConfig.socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-lg bg-[#1B4332] hover:bg-[#2D6A4F] text-[#95D5B2] hover:text-white flex items-center justify-center border border-[#2D6A4F] transition-all hover:scale-105"
+                    title="LinkedIn"
+                    aria-label="LinkedIn"
+                  >
+                    <LinkedInIcon className="w-4 h-4" />
+                  </a>
+                )}
+                {siteConfig.socialLinks.facebook && (
+                  <a
+                    href={siteConfig.socialLinks.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-lg bg-[#1B4332] hover:bg-[#2D6A4F] text-[#95D5B2] hover:text-white flex items-center justify-center border border-[#2D6A4F] transition-all hover:scale-105"
+                    title="Facebook"
+                    aria-label="Facebook"
+                  >
+                    <FacebookIcon className="w-4 h-4" />
+                  </a>
+                )}
+                {siteConfig.socialLinks.instagram && (
+                  <a
+                    href={siteConfig.socialLinks.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-lg bg-[#1B4332] hover:bg-[#2D6A4F] text-[#95D5B2] hover:text-white flex items-center justify-center border border-[#2D6A4F] transition-all hover:scale-105"
+                    title="Instagram"
+                    aria-label="Instagram"
+                  >
+                    <InstagramIcon className="w-4 h-4" />
+                  </a>
+                )}
+                {siteConfig.socialLinks.youtube && (
+                  <a
+                    href={siteConfig.socialLinks.youtube}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-8 h-8 rounded-lg bg-[#1B4332] hover:bg-[#2D6A4F] text-[#95D5B2] hover:text-white flex items-center justify-center border border-[#2D6A4F] transition-all hover:scale-105"
+                    title="YouTube Factory Tour"
+                    aria-label="YouTube"
+                  >
+                    <YouTubeIcon className="w-4 h-4" />
+                  </a>
+                )}
               </div>
             </div>
           </div>
@@ -128,15 +135,6 @@ export const Footer: React.FC = () => {
                   className="hover:text-white transition-colors text-left"
                 >
                   Product Catalog
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigate('/3d-studio')}
-                  className="hover:text-white transition-colors text-left font-bold text-[#E0A96D] flex items-center gap-1.5"
-                >
-                  <span>3D Studio Visualizer</span>
-                  <span className="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-[#2D6A4F] text-white">NEW</span>
                 </button>
               </li>
               <li>
@@ -201,31 +199,7 @@ export const Footer: React.FC = () => {
                   onClick={() => navigate('/products')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Compartment Plates
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigate('/products')}
-                  className="hover:text-white transition-colors text-left"
-                >
-                  Areca Bowls & Cups
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigate('/products')}
-                  className="hover:text-white transition-colors text-left"
-                >
-                  Areca Serving Trays
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => navigate('/products')}
-                  className="hover:text-white transition-colors text-left"
-                >
-                  Custom & Specialty Shapes
+                  5-Inch Deep Bowls
                 </button>
               </li>
             </ul>
@@ -251,7 +225,7 @@ export const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#95D5B2] shrink-0" />
-                <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">
+                <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors break-all">
                   {siteConfig.email}
                 </a>
               </div>
@@ -264,7 +238,7 @@ export const Footer: React.FC = () => {
                   onClick={() => openBulkEnquiry()}
                   className="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded bg-[#2D6A4F] hover:bg-[#40916C] text-[#FAF8F5] font-semibold text-xs transition-colors"
                 >
-                  <span>Request Bulk Quote</span>
+                  <span>Request Bulk Enquiry</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -274,11 +248,11 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Legal Bar */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#A3B18A]">
+        <div className="pt-6 sm:pt-8 flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4 text-[11px] sm:text-xs text-[#A3B18A] text-center md:text-left">
           <div>
             © {new Date().getFullYear()} {siteConfig.legalName}. All Rights Reserved.
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
             <button 
               onClick={() => navigate('/privacy-policy')}
               className="hover:text-white transition-colors"

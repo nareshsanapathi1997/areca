@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Product } from '../../types';
 import { useRouter } from '../../context/RouterContext';
+import { productSeoBySlug } from '../../data/seo';
 import { getProductWhatsAppUrl } from '../../lib/whatsapp';
 import { WhatsAppIcon } from '../common/Icons';
 import { 
@@ -13,9 +14,7 @@ import {
   Utensils, 
   CheckCircle2, 
   Flame, 
-  Clock,
-  Box,
-  RotateCw
+  Clock
 } from 'lucide-react';
 
 interface ProductDetailViewProps {
@@ -55,11 +54,11 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product })
           
           {/* Left Column: Image Gallery (6 cols) */}
           <div className="lg:col-span-6 space-y-4">
-            <div className="relative rounded-3xl overflow-hidden bg-[#EBE5D8] border border-[#D8CFC4] shadow-md aspect-[4/3]">
+            <div className="relative rounded-3xl overflow-hidden bg-white border border-[#D8CFC4] shadow-md aspect-square">
               <img
                 src={product.images[selectedImageIndex] || product.images[0]}
                 alt={product.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute top-4 left-4">
@@ -135,6 +134,11 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product })
               <p className="text-sm text-[#526356] mt-3 leading-relaxed">
                 {product.description}
               </p>
+              {productSeoBySlug[product.slug]?.intro && (
+                <p className="text-sm text-[#3E4E42] mt-3 leading-relaxed">
+                  {productSeoBySlug[product.slug].intro} Send an enquiry for current factory rate. We do not publish a fixed MRP; wholesale price depends on quantity, packing, and destination.
+                </p>
+              )}
             </div>
 
             {/* Available Sizes selector */}
@@ -191,7 +195,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product })
                 className="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#153826] hover:bg-[#2D6A4F] text-[#FAF8F5] font-bold text-sm shadow-md transition-all cursor-pointer"
               >
                 <Send className="w-4 h-4" />
-                <span>Request Wholesale / Export Quote</span>
+                <span>Request Wholesale / Export Enquiry</span>
               </button>
 
               <a
@@ -201,33 +205,8 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product })
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-sm shadow transition-all cursor-pointer"
               >
                 <WhatsAppIcon className="w-4 h-4 text-white" />
-                <span>Inquire on WhatsApp</span>
+                <span>Enquire on WhatsApp</span>
               </a>
-            </div>
-
-            {/* 3D Real-Time Inspection Banner */}
-            <div className="p-4 rounded-2xl bg-gradient-to-r from-[#FAF8F5] to-[#F4F1EA] border border-[#2D6A4F]/30 flex items-center justify-between gap-4 shadow-sm">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#153826] text-[#E0A96D] flex items-center justify-center shadow">
-                  <Box className="w-5 h-5" />
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-[#153826] flex items-center gap-1.5">
-                    <span>Inspect Shape in Real-Time 3D</span>
-                    <span className="px-1.5 py-0.2 rounded text-[9px] font-extrabold bg-[#2D6A4F] text-white">WebGL</span>
-                  </div>
-                  <div className="text-[11px] text-[#526356]">
-                    Rotate 360°, inspect leaf grain, thickness & die stamp simulation
-                  </div>
-                </div>
-              </div>
-
-              <button
-                onClick={() => navigate('/3d-studio')}
-                className="px-4 py-2 rounded-xl bg-[#153826] hover:bg-[#2D6A4F] text-white text-xs font-bold shadow transition-all hover:scale-105 cursor-pointer whitespace-nowrap shrink-0"
-              >
-                Launch 3D Studio
-              </button>
             </div>
 
             {/* Features Checklist */}

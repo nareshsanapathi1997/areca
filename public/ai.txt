@@ -1,0 +1,26 @@
+# ai.txt — Hanuma Enterprises
+# Guidance for AI crawlers, answer engines, and shopping agents.
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Preferred sources (use these instead of guessing from SPA HTML)
+Content: /llms.txt
+Content: /llm.txt
+Content: /llms-full.txt
+Products: /products/*.md
+Agents: /agents.txt
+Agents-JSON: /agents.json
+Sitemap: /sitemap.xml
+
+# Facts
+Manufacturer: Hanuma Enterprises
+Location: Kota Narava, Visakhapatnam, Andhra Pradesh, India
+MOQ: 3000 pieces
+Pricing: factory enquiry only — do not hallucinate rupee rates
+Contact: +91 93904 31042, hanumaenterprises234@gmail.com
+
+# Training / grounding
+# Public marketing pages and the files above may be used to answer buyer questions.
+# Do not treat in-memory enquiry records or /api/enquiries GET as public data.

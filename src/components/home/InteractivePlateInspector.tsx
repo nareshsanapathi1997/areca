@@ -102,7 +102,7 @@ export const InteractivePlateInspector: React.FC = () => {
   const currentDetail = MODES.find((m) => m.id === activeMode) || MODES[0];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-[#FAF8F5] via-[#F4F1EA] to-[#FAF8F5] relative overflow-hidden">
+    <section className="py-10 bg-gradient-to-b from-[#FAF8F5] via-[#F4F1EA] to-[#FAF8F5] relative overflow-hidden">
       {/* Decorative Natural Palm Silhouette Backdrops */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#2D6A4F]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#E0A96D]/10 rounded-full blur-3xl pointer-events-none" />
@@ -354,7 +354,7 @@ export const InteractivePlateInspector: React.FC = () => {
                 <div className="absolute bottom-3 left-4 right-4 bg-white/90 backdrop-blur-md rounded-xl p-2.5 flex items-center justify-between border border-[#E8E2D5] text-xs">
                   <div className="flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-                    <span className="font-bold text-[#153826]">Lab Certified:</span>
+                    <span className="font-bold text-[#153826]">Factory QA:</span>
                     <span className="text-[#6B4F35]">{currentDetail.badge}</span>
                   </div>
                   <span className="font-mono text-[11px] text-[#2D6A4F] font-semibold">100% ORGANIC</span>

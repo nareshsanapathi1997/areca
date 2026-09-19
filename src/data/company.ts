@@ -11,15 +11,15 @@ export const companyStats: CompanyStats = {
   countriesServed: "Pan-India & Global Supply",
   bulkOrdersSupplied: "Direct Manufacturer Supply",
   factoryAreaSqFt: "Kota Narava Facility, Visakhapatnam",
-  isPlaceholderNote: "Verified manufacturing figures for HANUMA ENTERPRISES, Visakhapatnam (AP)."
+  isPlaceholderNote: "Verified manufacturing figures for Hanuma Enterprises, Visakhapatnam (AP)."
 };
 
 export const businessHighlights = {
   capacityMonthly: "1 Lakh Plates",
   moq: "3,000 Plates per Order",
-  factoryLocation: "2-88/1, kota narava, Visakhapatnam, Andhra Pradesh - 530027, India",
+  factoryLocation: "2-88/1, Kota Narava, Visakhapatnam, Andhra Pradesh - 530027, India",
   email: "hanumaenterprises234@gmail.com",
-  phone: "+91 79970 92965",
+  phone: "+91 93904 31042",
   coreProductsCount: 4
 };
 
@@ -29,12 +29,12 @@ export const companyHighlights = [
     desc: "Zero trees felled or harmed. We collect only naturally shed areca palm sheaths from local sustainable plantation farmers."
   },
   {
-    title: "Pure Spring Wash & Heat Sanitization",
-    desc: "Sterilized under 180°C - 200°C hydraulic thermal pressing. Free of synthetic glues, plastics, wax coatings, or bleach."
+    title: "Potable Wash & Heat Sanitization",
+    desc: "Washed in clean factory water, then formed and sterilised under 180°C–200°C hydraulic heat. No synthetic glues, plastics, wax coatings, or bleach."
   },
   {
-    title: "Microbial & Food Safety Tested",
-    desc: "Rigorous lot-by-lot laboratory testing for moisture control (<10%) and zero fungal or bacterial contaminants."
+    title: "In-Line Moisture & Visual QA",
+    desc: "Each batch is checked for moisture (target under 10%), warping, pinholes, and rim finish before packing. Independent lab reports are shared with buyers on request."
   },
   {
     title: "Export-Grade Moisture Barrier Packing",
@@ -58,7 +58,7 @@ export const whyChooseUsData: WhyChooseUsCard[] = [
   {
     id: "hygienic-processing",
     title: "Hygienic Processing",
-    description: "Multi-stage freshwater scrubbing, UV-assisted drying, high-temperature hydraulic pressing, and strict sanitation checks at every station.",
+    description: "Multi-stage freshwater washing, solar drying, high-temperature hydraulic pressing, and visual inspection at every station.",
     icon: "ShieldCheck"
   },
   {
@@ -86,36 +86,36 @@ export const applicationSectors = [
     name: "Catering & Banquets",
     desc: "Elegant rustic tableware for weddings, receptions, and large gatherings that require sturdy, premium presentation without dishwashing overhead.",
     icon: "Utensils",
-    image: "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80"
+    image: "/images/areca-original/areca_plate_12_inch_round_deep.jpg"
   },
   {
     name: "Hotels & Eco-Resorts",
     desc: "Elevate your property's sustainability credentials with 100% natural dining ware for poolside service, breakfast buffets, and cabana dining.",
     icon: "Hotel",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    image: "/images/areca-original/areca_plate_10_inch_round_deep.jpg"
   },
   {
     name: "Restaurants & Cafes",
     desc: "Oil-proof and cut-resistant dinner plates and bowls perfect for fast-casual dining, food trucks, thali service, and outdoor patios.",
     icon: "Coffee",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+    image: "/images/areca-original/areca_plate_10_inch_square_shallow.jpg"
   },
   {
     name: "Corporate & Tech Campuses",
     desc: "Zero-waste corporate cafeterias, tech conference catering, client lunches, and eco-conscious employee dining programs.",
     icon: "Building2",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+    image: "/images/areca-original/areca_bowl_5_inch_round_deep.jpg"
   },
   {
     name: "Food Festivals & Public Events",
     desc: "High rigidity and thermal insulation allow attendees to carry piping hot noodles, curries, or barbecue without bending or burning fingers.",
     icon: "Tent",
-    image: "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80"
+    image: "/images/areca-original/areca_plate_12_inch_round_deep.jpg"
   },
   {
     name: "Wholesale & Global Distributors",
     desc: "Container-load (FCL / LCL) export supplies for eco-product distributors, packaging supply stores, and supermarket private labeling.",
     icon: "Container",
-    image: "/images/areca-original/areca_plates_stack_1.jpg"
+    image: "/images/areca-original/factory_export_packaging.jpg"
   }
 ];

@@ -56,6 +56,9 @@ export interface SiteConfig {
     state: string;
     country: string;
     pincode: string;
+    latitude: number;
+    longitude: number;
+    mapsUrl: string;
   };
   website: string;
   businessHours: string;

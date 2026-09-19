@@ -11,11 +11,7 @@ import {
   CheckCheck, 
   Scissors, 
   SearchCheck, 
-  Package, 
-  Truck, 
-  ArrowRight,
-  Sparkles,
-  Box 
+  Package
 } from 'lucide-react';
 
 const iconMap: Record<string, React.ElementType> = {
@@ -26,16 +22,15 @@ const iconMap: Record<string, React.ElementType> = {
   Flame,
   Scissors,
   SearchCheck,
-  Package,
-  Truck
+  Package
 };
 
 export const ManufacturingPage: React.FC = () => {
-  const { openBulkEnquiry, navigate } = useRouter();
+  const { openBulkEnquiry } = useRouter();
 
   return (
-    <div className="py-16 bg-[#FAF8F5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+    <div className="py-10 bg-[#FAF8F5]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
@@ -44,10 +39,10 @@ export const ManufacturingPage: React.FC = () => {
             <span>Facility Operations & Quality Standards</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#153826] font-heading tracking-tight">
-            Our 9-Stage Manufacturing Process
+            Our 8-Stage Manufacturing Process
           </h1>
           <p className="text-base sm:text-lg text-[#526356] leading-relaxed">
-            From plantation leaf collection to high-temperature hydraulic sterilization and moisture-barrier export packing, explore every stage of our disciplined production line.
+            From plantation leaf collection at our Kota Narava, Visakhapatnam factory to high-temperature hydraulic forming and moisture-barrier packing.
           </p>
         </div>
 
@@ -70,9 +65,9 @@ export const ManufacturingPage: React.FC = () => {
               <Droplets className="w-6 h-6 text-[#2D6A4F]" />
             </div>
             <div className="space-y-1">
-              <h3 className="text-sm font-bold text-[#153826]">Potable Spring Water Wash</h3>
+              <h3 className="text-sm font-bold text-[#153826]">Potable Factory Water Wash</h3>
               <p className="text-xs text-[#526356] leading-relaxed">
-                Triple pressure jets remove plantation grit using fresh mountain spring water. Zero bleaches, chlorine, or synthetic surfactants.
+                Triple pressure jets remove plantation grit using clean potable water at the Kota Narava unit. Zero bleaches, chlorine, or synthetic surfactants.
               </p>
             </div>
           </div>
@@ -90,7 +85,7 @@ export const ManufacturingPage: React.FC = () => {
           </div>
         </div>
 
-        {/* 9 Process Stages Detail Grid */}
+        {/* Process Stages Detail Grid */}
         <div className="space-y-12">
           {manufacturingSteps.map((step, idx) => {
             const Icon = iconMap[step.iconName] || Flame;
@@ -129,7 +124,7 @@ export const ManufacturingPage: React.FC = () => {
                       </div>
                       <div>
                         <span className="text-xs font-bold uppercase tracking-wider text-[#2D6A4F]">
-                          Step {step.step} of 9
+                          Step {step.step} of {manufacturingSteps.length}
                         </span>
                         <h2 className="text-2xl sm:text-3xl font-bold text-[#153826] font-heading">
                           {step.title}
@@ -156,32 +151,6 @@ export const ManufacturingPage: React.FC = () => {
           })}
         </div>
 
-        {/* 3D Hydraulic Press Tooling Showcase Banner */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#FAF8F5] to-[#F4F1EA] border-2 border-[#2D6A4F]/30 shadow-lg flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="space-y-3 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#153826]/10 text-[#2D6A4F] text-xs font-bold uppercase tracking-wider">
-              <Box className="w-3.5 h-3.5 text-[#E0A96D]" />
-              <span>Interactive 3D Engineering Experience</span>
-            </div>
-            <h3 className="text-2xl sm:text-3xl font-bold text-[#153826] font-heading">
-              Simulate the 150°C Hydraulic Die Pressing in 3D
-            </h3>
-            <p className="text-xs sm:text-sm text-[#526356] leading-relaxed">
-              Explore our real-time WebGL manufacturing simulator. Toggle hydraulic bronze tooling dies, inspect heat vaporization, inspect wall thickness, and rotate plates 360 degrees.
-            </p>
-          </div>
-
-          <div className="shrink-0 flex flex-col sm:flex-row items-center gap-3">
-            <button
-              onClick={() => navigate('/3d-studio')}
-              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#153826] hover:bg-[#2D6A4F] text-white font-bold text-xs uppercase tracking-wider shadow-md transition-all hover:scale-105 cursor-pointer inline-flex items-center justify-center gap-2"
-            >
-              <span>Launch 3D Studio</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-
         {/* Bottom CTA */}
         <div className="p-8 sm:p-10 rounded-3xl bg-[#153826] text-[#FAF8F5] flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div className="space-y-1">
@@ -189,7 +158,7 @@ export const ManufacturingPage: React.FC = () => {
               Have Technical Questions Regarding Batch Tolerances or Testing?
             </h3>
             <p className="text-xs sm:text-sm text-[#C2B5A0]">
-              Our QA and export logistics team will provide detailed technical specification sheets and laboratory test parameters.
+              Our QA and export desk will share specification sheets. Independent lab reports can be arranged for a buyer lot on request.
             </p>
           </div>
           <button

@@ -26,10 +26,10 @@ export const SustainabilityPage: React.FC = () => {
             <span>Ecological Responsibility & Circular Economy</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#153826] font-heading tracking-tight">
-            Quality & Environmental Stewardship
+            Biodegradable Areca Leaf Plates from Vizag
           </h1>
           <p className="text-base sm:text-lg text-[#526356] leading-relaxed">
-            Our mission is anchored in honest, biological sustainability — utilizing 100% naturally fallen leaves without artificial claims, synthetic binders, or industrial waste.
+            Compostable areca leaf plates and bowls from our Visakhapatnam factory — no bleach, wax, or plastic lining. Enquire for biodegradable plate wholesale price.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ export const SustainabilityPage: React.FC = () => {
               Closed-Loop Water Management
             </h3>
             <p className="text-xs sm:text-sm text-[#526356] leading-relaxed">
-              Because our cleaning stage uses only potable spring water without bleach, the wash runoff contains purely leaf soil. We channel this water through sediment sand filtration beds to irrigate surrounding palm tree saplings, creating zero industrial wastewater discharge.
+              Wash uses potable factory water without bleach. Runoff is settled so grit stays out of drains. We do not add detergents or chlorine to the wash line.
             </p>
           </div>
 

@@ -20,7 +20,7 @@ export const BulkEnquiryPage: React.FC = () => {
   const bulkFaqs = [
     {
       q: "What is your standard Minimum Order Quantity (MOQ)?",
-      a: "For domestic wholesale within India, our minimum order quantity is typically 5,000 pieces across mixed SKUs. For international export, we cater to Full Container Loads (20ft / 40ft HQ FCL) as well as Less than Container Loads (LCL, minimum 15,000 - 25,000 pieces)."
+      a: "For domestic wholesale within India, our minimum order quantity is 3,000 pieces per order (sizes can be mixed). For international export, we cater to Full Container Loads (20ft / 40ft HQ FCL) as well as Less than Container Loads (LCL)."
     },
     {
       q: "Do you supply evaluation sample kits?",
@@ -32,7 +32,7 @@ export const BulkEnquiryPage: React.FC = () => {
     },
     {
       q: "What are your international shipping terms and sea ports?",
-      a: "We export under FOB, CFR, and CIF terms through Mangalore Port (NMPT) and Chennai Port. All consignments are accompanied by Phytosanitary Certificates, Certificates of Origin, and Fumigation documentation where required."
+      a: "We export under FOB, CFR, and CIF terms through Visakhapatnam Port (Vizag), with Chennai as an alternate load port. All consignments are accompanied by Phytosanitary Certificates, Certificates of Origin, and Fumigation documentation where required."
     }
   ];
 
@@ -44,13 +44,13 @@ export const BulkEnquiryPage: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EBE5D8] text-xs font-bold uppercase tracking-wider text-[#153826]">
             <Package className="w-3.5 h-3.5 text-[#2D6A4F]" />
-            <span>Direct Factory Quotation Desk</span>
+            <span>Direct Factory Enquiry Desk</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#153826] font-heading tracking-tight">
-            Wholesale & Bulk Export Enquiries
+            Areca Leaf Plates Bulk Order & Wholesale Price
           </h1>
           <p className="text-base text-[#526356] leading-relaxed">
-            Partner directly with our Karnataka manufacturing facility for container-load exports, distributor territories, catering supplies, and contract OEM packaging.
+            Request bulk price, wholesale rate, and cost per piece from our Visakhapatnam (Vizag) factory. We supply restaurants, hotels, catering, and events. MOQ 3,000. Partner directly with the manufacturer in Kota Narava, Andhra Pradesh.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export const BulkEnquiryPage: React.FC = () => {
                 </div>
                 <div>
                   <span className="text-xs uppercase tracking-wider text-[#95D5B2] font-bold">Fast-Track Response</span>
-                  <h3 className="text-xl font-bold font-heading">Need an Instant Quotation?</h3>
+                  <h3 className="text-xl font-bold font-heading">Need a Factory Rate?</h3>
                 </div>
               </div>
               <p className="text-xs text-[#C2B5A0] leading-relaxed">
